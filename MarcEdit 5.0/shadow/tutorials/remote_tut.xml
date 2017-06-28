@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--==============================================
+  - This is the remote XML file that contains all 
+  - the information on the current MarcEdit 
+  - tutorial pages.  
+  - MODIFIED: 5/2/2003
+  ==============================================-->
+<tutorial xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<item>
+		<dc.title>Using templates (.mot files) in MarcEdit</dc.title>
+		<dc.description>Like many word processors, MarcEdit's MarcEditor has the ability to utilize template files to allow users to create default template files that can be used to reduce the amount of repetitive data needing to be typed.</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/tut_templates.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+	
+	<item>
+		<dc.title>Using the MarcEdit Script Maker</dc.title>
+		<dc.description>New to MarcEdit 4.1+ is a new add-in called the MarcEdit Script Maker.
+						The MarcEdit Script Maker has been designed to help novice users create 
+						simple scripts to automate simple maintenance tasks.  For those with a 
+						scripting background, the Script Maker can be used to generate a 
+						common framework, saving the coder from typing hundreds of lines of code.  
+		</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/tut_scriptmaker.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+	
+	<item>
+		<dc.title>Using MarcEdit and III's Journal Title Search</dc.title>
+		<dc.description>Insert the 229 field into serials records (primarily for III 
+						libraries looking to use the Journal Title Search feature)</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/html/tut_journal.html</dc.identifier>
+		<dc.date>October, 2001</dc.date>
+	</item>
+	
+	<item>
+		<dc.title>MarcEdit 101: Breaking a MARC file</dc.title>
+		<dc.description>This tutorial demonstrates how to break a MARC record into MarcEdit's 
+						mnemonic file format, the Library of Congress's MARCXML Schema and Dublin 
+						Core (both qualified and unqualified)</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/break_tut.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+	
+		<item>
+		<dc.title>MarcEdit 101: Making a MARC file</dc.title>
+		<dc.description>This tutorial demonstrates how to make MarcEdit's mnemonic file
+						format back into MARC from the MARC Tools dialog and the MarcEditor.</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/make_tut.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+
+	<item>
+		<dc.title>MarcEdit 101: Adding a Field</dc.title>
+		<dc.description>This tutorial demonstrates how to globally add a field in the MarcEditor</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/addfield_tut.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+	
+		<item>
+		<dc.title>MarcEdit 101: Deleting a Field</dc.title>
+		<dc.description>This tutorial demonstrates how to globally delete a field in the MarcEditor</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/deletefield_tut.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+	
+		<item>
+		<dc.title>MarcEdit 101: Modifying an LDR</dc.title>
+		<dc.description></dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier></dc.identifier>
+		<dc.date>None</dc.date>
+	</item>
+	
+	<item>
+		<dc.title>MarcEdit 101: Setting the application options</dc.title>
+		<dc.description>This tutorial briefly goes over the options available via 
+						the options dialog.  This discusses the application options
+						available to all users and those options available to users 
+						logged in as administrators and power users -- as well as 
+						why some functions are not available to all users.</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/options_tut.ppt</dc.identifier>
+		<dc.date>May 5, 2003</dc.date>
+	</item>
+
+	<item>
+		<dc.title>Extracting a set of MARC records from a larger file: Using the Extract Selected MARC Records Utility</dc.title>
+		<dc.description>This tutorial demonstrates how to select a subset of records with a larger MARC file using the Extract Selected
+				    MARC Records utility.  The function utilizes the functionality that allows a user to search within a field
+				    or subfield to select resources based on specific data in the record.
+                            The tutorial is in the form of an .AVI file.  The file has been zipped to reduce download time.  
+				    <br />Total download size: 666K</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/Extract_Records.zip</dc.identifier>
+		<dc.date>March 25, 2004</dc.date>
+	</item>
+
+	<item>
+		<dc.title>Joining MARC files</dc.title>
+		<dc.description>This tutorial demonstrates how to use the Join MARC Records Utility.  Users can use this
+				    utility to join multiple MARC files into a single file for editing.
+				    The tutorial is in the form of an .AVI file.  The file has been zipped to reduce download time.  
+				    <br />Total download size: 666K</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>http://oregonstate.edu/~reeset/marcedit/tutorials/Join_Files.zip</dc.identifier>
+		<dc.date>March 25, 2004</dc.date>
+	</item>
+
+	<item>
+		<dc.title>Metadata Crosswalks with MarcEdit using XSLT</dc.title>
+		<dc.author>Tripathi, Aditya</dc.author>
+		<dc.description>Retro-conversion tools are heavily used in libraries for data exchange. The advent of Web has brought
+		the concept of Digital libraries and semantic web. This movement has increased the use of metadata from different
+		domains. In such a situation libraries often feel to convert web based metadata schema to their native metadata
+		schema. XSL Transformation is a wonderful tool for such kind of conversion which is used by MarcEdit, a bibliographic
+		data editor designed at Oregon State University. This paper is a tutorial for using XSLT and
+		MarcEdit.</dc.description>
+		<dc.relation>Online Tutorials</dc.relation>
+		<dc.identifier>https://drtc.isibang.ac.in/handle/1849/127</dc.identifier>
+		<dc.date>2003</dc.date>
+	</item>
+
+  <item>
+    <dc.title>Uploaded YouTube Videos</dc.title>
+    <dc.description>A number of videos related to MarcEdit can be found on YouTube covering a variety of topics.</dc.description>
+    <dc.relation>Online Tutorials</dc.relation>
+    <dc.identifier>http://www.youtube.com/results?search_query=marcedit&amp;search_type=&amp;aq=f</dc.identifier>
+    <dc.date>Nov. 9, 2009</dc.date>
+  </item>
+</tutorial>

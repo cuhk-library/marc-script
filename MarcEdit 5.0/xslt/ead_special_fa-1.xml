@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- finding aids that have special transformations  02-18-2004 -->
+
+<!-- 03/05/2004 -->
+<!-- Creator: Michael A. Ferrando -->
+<!-- Editor used: NoteTab Pro 4.5 -->
+<!-- EAD 2002 tag set -->
+<!-- Library of Congress best practices respected -->
+
+<ead_finding_aids>
+	<division name="American Folklife Center" aggregate="af">
+	</division>
+	<division name="Geography &amp; Map" aggregate="gm">
+	</division>
+	<division name="Manuscript" aggregate="ms">
+		<special_fa type="unitid" version="2002" eadid="ms002012">
+			<p>The unitid comes before the unittitle. The transformation does not allow the unitid to appear in the Container column. The transformation instead re-creates a new table in cell[2]. The unitid is given a cell 25% and the unittitle is given the rest (100 - $x).</p>
+		</special_fa>
+		<special_fa type="unitid" version="2002" eadid="ms003030">
+			<p>The unitid comes before the unittitle. The transformation does not allow the unitid to appear in the Container column. The transformation instead re-creates a new table in cell[2]. The unitid is given a cell 25% and the unittitle is given the rest (100 - $x).</p>
+		</special_fa>
+ <special_fa type="unitid" version="2002" eadid="ms001004">
+		</special_fa>
+	</division>
+	<division name="Motion Picture, Broadcasting &amp; Recorded Sound" aggregate="rs">
+	</division>
+	<division name="Music" aggregate="mu">
+	</division>
+	<division name="Prints &amp; Photographs" aggregate="pp">
+	</division>
+	<division name="Rare Book &amp; Special Collections" aggregate="rb">
+	</division>
+</ead_finding_aids>

@@ -1,0 +1,11 @@
+MARC=>Dublin Core	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\MARC21slim2RDFDC.xsl	0	2
+Dublin Core => MARC	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\RDFDC2MARC21slim.xsl	2	0	yes
+MARC=>MODS	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\MARC21slim2MODS3.xsl	0	2
+MODS=>MARCXML	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\MODS2MARC21slim.xsl	2	2
+OAIDC=>MARCXML	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\OAIDCtoMARCXML.xsl	2	1
+OAIMARC21=>MARC21	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\OAIMARC21XML.xsl	2	2
+EAD=>HTML	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\EAD_2002_HTML_conv-1.xsl	2	2
+MODS=>MARC	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\MODS2MARC21slim.xsl	2	0
+EAD=>MARC	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\EADlitetoMARC21slimXML.xsl	2	0
+MARC=>FGDC	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\MARC21slim2FGDC.xsl	0	2
+FGDC=>MARC	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\XSLT\fgdctoMARC21xml.xsl	2	0

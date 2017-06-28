@@ -1,0 +1,459 @@
+<?xml version="1.0" ?>
+<language>
+	<global>
+		<menu>
+			<file>&amp;Arkiv</file>
+			<exit>Av&amp;sluta</exit>
+			<tools>&amp;Verktyg</tools>
+			<errorreport>&amp;Förslag/Felrapport</errorreport>
+			<mainwindow>&amp;Återvänd till startsidan</mainwindow>
+			<open>&amp;Öppna</open>
+			<save>&amp;Spara</save>
+			<help>&amp;Hjälp</help>
+			<contents_help>&amp;Innehåll och hjälp</contents_help>
+			<marcbreaker>&amp;MarcBreaker</marcbreaker>
+			<marcmaker>Mar&amp;cMaker</marcmaker>
+			<marceditor>Marc&amp;Editor</marceditor>
+			<robertcompare>R&amp;obertCompare</robertcompare>
+			<marcvalidate>MAR&amp;CValidate</marcvalidate>
+			<z3950>MarcEdit &amp;Z39.50-klient</z3950>
+		</menu>
+		<tooltip>
+			<open>Öppna fil</open>
+			<save>Spara fil</save>
+			<export>Exportera poster</export>
+			<help>Hjälp</help>
+		</tooltip>
+		<labels>
+			<subfield>Delfält:</subfield>
+			<field>Fält:</field>
+			<about>Om MarcEdit.NET</about>
+			<source_file>Källfil:</source_file>
+			<marcbreaker>MarcBreaker</marcbreaker>
+			<marcmaker>MarcMaker</marcmaker>
+			<marceditor>MarcEditor</marceditor>
+			<scriptmaker>MarcEdits Script Maker</scriptmaker>
+			<marctoxml>MARC=&gt;MARC21XML</marctoxml>
+			<xmltomarc>MARC21XML=&gt;MARC</xmltomarc>
+			<field>Fält</field>
+		</labels>
+		<buttons>
+			<process>&amp;Kör</process>
+			<apply>&amp;Verkställ</apply>
+			<ok>&amp;OK</ok>
+			<close>&amp;Stäng</close>
+			<replace>&amp;Ersätt</replace>
+			<about>O&amp;m MarcEdit.NET</about>
+			<modify>&amp;Ändra</modify>
+			<default>Använd standardvärden</default>
+		</buttons>
+		<messages>
+			<status_bar>Bearbetar filen...var vänlig och vänta.</status_bar>
+			<processing_complete>Körningen är klar!</processing_complete>
+			<processing_start>Körningen startas....</processing_start>
+		</messages>
+	</global>
+	<Field_Count>
+		<title>Antal fält</title>
+		<cmenu>
+			<cmenuClipboard>Kopiera till klippbord</cmenuClipboard>
+			<cmenuSubfields>Räkna delfält</cmenuSubfields>
+		</cmenu>
+		<lb_ReportStyle>Rapportstil:</lb_ReportStyle>
+		<opt_tab>TAB-avgränsad rapport</opt_tab>
+		<opt_xml>XML-rapport</opt_xml>
+		<opt_html>HTML-rapport</opt_html>
+		<cmd_Report>Sk&amp;apa rapport</cmd_Report>
+	</Field_Count>
+	<FindReplace>
+		<title>Sök/Ersätt:</title>
+		<tbFind>Sök</tbFind>
+		<tbReplace>Ersätt</tbReplace>
+		<lb_FindWhat>Sökord:</lb_FindWhat>
+		<cmdFFind>&amp;Sök</cmdFFind>
+		<groupBox1>Alternativ för sökning:</groupBox1>
+		<ck_f_whole_word>Sök endast hela ord</ck_f_whole_word>
+		<ck_f_match_case>Matcha gemena/VERSALER</ck_f_match_case>
+		<lb_ReplaceWith>Ersätt med:</lb_ReplaceWith>
+		<ck_R_Case>Matcha gemena/VERSALER</ck_R_Case>
+		<ck_R_RegExp>Använd reguljära uttryck</ck_R_RegExp>
+		<cmd_R_Replace>&amp;Ersätt</cmd_R_Replace>
+		<cmd_R_All>Ersätt &amp;alla</cmd_R_All>
+	</FindReplace>
+	<frmAbout>
+		<title>Om MarcEdit.NET</title>
+		<lbVersion>Version:</lbVersion>
+		<lbAuthor>Upphovsman:</lbAuthor>
+		<lbMod>Ändrad:</lbMod>
+		<txt_info>MarcEngine har designats för att understöda alla MARC-format, oberoende av variant (t.ex. MARC21, UNIMARC, osv.) MarcEngine har designats för att understöda MARCXML-schemat som utvecklats vid U.S. Library of Congress. MarcEngine har designats med ett XML API för att understöda andra XML-scheman. MarcEdits Z39.50 Yaz-klient använder Index Data's Yaz Z39.50 bibliotek. För att se licensinformation för Index Data, gå till punkten tredjepartsmjukvara i MarcEdits hjälp.</txt_info>
+		<lbInfo>Mer information:</lbInfo>
+		<lbThanks>Jag vill tacka Oregon State University Libraries för deras stöd till MarcEdit-projektet.</lbThanks>
+	</frmAbout>
+	<frmBatchEdit>
+		<title>Batchverktyg i MarcEdit.NET</title>
+		<navbar>
+			<lnkAddDelete>Lägg till/ta bort fält</lnkAddDelete>
+			<lnkSubfield>Redigera data i delfält</lnkSubfield>
+			<lnkIndicators>Redigera indikatorer</lnkIndicators>
+			<lnkSwapFields>Byt plats på fält</lnkSwapFields>
+		</navbar>
+		<globals>
+			<lb_Field>Fält:</lb_Field>
+			<lb_Subfield>Delfält:</lb_Subfield>
+			<lb_Position>Position:</lb_Position>
+			<lb_FieldData>Fältdata:</lb_FieldData>
+			<lb_ReplaceWith>Ersätt med:</lb_ReplaceWith>
+			<lb_Indicator>Indikatorer:</lb_Indicator>
+			<lb_SearchOptions>Alternativ för sökning</lb_SearchOptions>
+			<lb_MatchCase>Matcha gemena/VERSALER</lb_MatchCase>
+			<lb_RegEx>Använd reguljära uttryck</lb_RegEx>
+		</globals>
+		<lb_A_Title>Lägg till/Ta bort fältverktyget</lb_A_Title>
+		<ck_A_Insert>Infoga före</ck_A_Insert>
+		<ck_A_not_present>Lägg till fält endast om det saknas</ck_A_not_present>
+		<cmd_A_Delete>&amp;Ta bort fält</cmd_A_Delete>
+		<cmd_A_Add>&amp;Lägg till fält</cmd_A_Add>
+		<lb_Sub_Title>Ändra verktyget för delfält</lb_Sub_Title>
+		<cmd_Sub_Replace>&amp;Ersätt text</cmd_Sub_Replace>
+		<cmd_Sub_Remove>T&amp;a bort text</cmd_Sub_Remove>
+		<ck_Sub_New>Endast nytt delfält</ck_Sub_New>
+		<ck_Sub_NotPresent>Lägg till delfält om det ej finns</ck_Sub_NotPresent>
+		<lb_Ind_Title>Ändra verktyget för indikatorer</lb_Ind_Title>
+		<lb_Ind_Replace>Ersätt indikatorer</lb_Ind_Replace>
+		<cmd_I_Replace>E&amp;rsätt</cmd_I_Replace>
+		<lb_Swap_Title>Byt verktyg för fält</lb_Swap_Title>
+		<ck_Swap_Copy>Kopiera källa</ck_Swap_Copy>
+		<ck_Swap_Add>Lägg till i existerande fält</ck_Swap_Add>
+		<ck_Swap_Override>Ignorera standardfunktionalitet</ck_Swap_Override>
+		<cmd_Swap_Process>&amp;Kör</cmd_Swap_Process>
+		<label20>Modifierade data:</label20>
+	</frmBatchEdit>
+	<frmMain>
+		<title>MarcEdit av Terry Reese</title>
+		<menu>
+			<mnuFiletools>MARC-verktyg</mnuFiletools>
+			<mnuTools>&amp;Verktyg</mnuTools>
+			<mnuToolsSelect>Välj MARC-poster</mnuToolsSelect>
+			<mnuToolsDelete>&amp;Radera valda poster</mnuToolsDelete>
+			<mnuToolsExtract>&amp;Extrahera valda poster</mnuToolsExtract>
+			<mnuToolsTabbed>Exportera &amp;tabulatoravgränsade poster</mnuToolsTabbed>
+			<mnuToolsGateway>Ex&amp;portera MARC-poster</mnuToolsGateway>
+			<mnuToolsJoin>MARC&amp;Join</mnuToolsJoin>
+			<mnuToolsSplit>&amp;MARCSplit</mnuToolsSplit>
+			<mnuToolsPreferences>&amp;Inställningar</mnuToolsPreferences>
+			<mnuAddins>A&amp;dd-ins</mnuAddins>
+			<mnuAddinTranslator>&amp;Översättare för avgränsad text</mnuAddinTranslator>
+			<mnuAddinTutorial>Manager för lokala &amp;hjälpavsnitt</mnuAddinTutorial>
+			<mnuAddinScript>&amp;Script Maker</mnuAddinScript>
+			<mnuHelpList>Prenumerera på MarcEdits &amp;nyhetsbrev</mnuHelpList>
+		</menu>
+		<navbar>
+			<lnkStart>Startsida</lnkStart>
+			<lnkTools>MARCTools</lnkTools>
+			<lnkAddin>Add-ins</lnkAddin>
+			<lnkHelp>Hjälp</lnkHelp>
+			<lnkAbout>Om programmet</lnkAbout>
+		</navbar>
+		<label2>Ofta använda verktyg:</label2>
+		<startHelp>Hjälp för MarcEdit.NET</startHelp>
+		<lbWhatsNew>Nyheter i MarcEdit.NET</lbWhatsNew>
+		<lnkpTools>Huvudfönster i MARCTools</lnkpTools>
+		<lbpTools>Gå till huvudfönstret i MARCTools</lbpTools>
+		<lb_pBreaker>MarcBreaker används för att göra om MARC-data till ett mnemoniskt format.</lb_pBreaker>
+		<lb_pMaker>MarcMaker används för att sätta ihop MarcEdit's mnemoniska filformat tillbaks till MARC</lb_pMaker>
+		<lb_pXMLm>Konverterar MARC-data till MARC21Slim-format (U.S. Library of Congress)</lb_pXMLm>
+		<lb_pEditor>MarcEdit's inbyggda anteckningsblock, designat speciellt för att redigera MARC-poster</lb_pEditor>
+		<lnkADelimited>Översättare för avgränsad text</lnkADelimited>
+		<lnkATutorial>Lokala hjälpavsnitt</lnkATutorial>
+		<lb_ATutorial>Visa MarcEdits hjälpavsnitt som är lokala eller skapade av övriga användare</lb_ATutorial>
+		<lb_ADelimited>Importera avgränsade data till MarcEdits mnemoniska format</lb_ADelimited>
+		<lb_AScript>Script Maker i MarcEdit är ett litet verktyg som kan användas för att skapa vbscript, som utför mer avancerade uppgifter</lb_AScript>
+		<lnkHIndex>Innehåll och index</lnkHIndex>
+		<lnkHError>Förslag/Felrapport</lnkHError>
+		<lb_HIndex>Öppna MarcEdit's hjälpsystem</lb_HIndex>
+		<lnkHTutorial>Visa hjälpavsnitt</lnkHTutorial>
+		<lb_HTutorial>Visa alla hjälpavsnitt som finns för MarcEdit för tillfället</lb_HTutorial>
+		<lnkHNotify>Prenumerera på MarcEdit's nyhetslista</lnkHNotify>
+		<lb_HNotify>Prenumerera på MarcEdit's nyhetslista för uppdateringar och information om utvecklingen av MarcEdit</lb_HNotify>
+		<lb_HError>Har du kommentarer? Klicka här för att kontakta upphovsmannen.</lb_HError>
+		<lb_AboutDesc>Här är det verkliga geniet bakom MarcEdit. Jag bara skriver mitt namn under det :-&gt;  Om du vill veta mera om mig eller min familj, klicka här:</lb_AboutDesc>
+	</frmMain>
+	<frmOptions>
+		<title>MarcEdit alternativ</title>
+		<tabFile>Filer</tabFile>
+		<tabExport>Exportera</tabExport>
+		<tabEditor>MarcEditor</tabEditor>
+		<tabEngine>MARCEngine</tabEngine>
+		<tabLang>Språk</tabLang>
+		<lb_SetFileOptions>Välj alternativ för filer:</lb_SetFileOptions>
+		<ckmrc>Associera (*.mrc) filer med MarcBreaker</ckmrc>
+		<ckmrk>Associera (*.mrk*) filer med MarcEditor</ckmrk>
+		<ckexport>Lägg till alternativet exportera i menyn</ckexport>
+		<ckpreview>Lägg till alternativ för förhandsgranskning i menyn</ckpreview>
+		<lb_FileAssociate_1>Associera (*</lb_FileAssociate_1>
+		<lb_FileAssociate_2>) filtyp med:</lb_FileAssociate_2>
+		<cmd_tEdit>Ändra typ</cmd_tEdit>
+		<lb_TCPIP_Props>TCP/IP-egenskaper:</lb_TCPIP_Props>
+		<lb_TCP_Host>Värdadress:</lb_TCP_Host>
+		<lb_TCP_Port>Port:</lb_TCP_Port>
+		<lb_TCP_Timeout>Timeout:</lb_TCP_Timeout>
+		<ck_export_output>Exportkvitto (ta till vara ILS-utdata)</ck_export_output>
+		<lb_Serial_Settings>Skrivare/Novell inställningar:</lb_Serial_Settings>
+		<lb_Serial_Printer_Name>Skrivarnamn:</lb_Serial_Printer_Name>
+		<lb_Editor_Template>Välj mall för MarcEditor:</lb_Editor_Template>
+		<lb_Current_Template>Aktuell mall:</lb_Current_Template>
+		<cmd_editor_set_font>Ä&amp;ndra typsnitt</cmd_editor_set_font>
+		<lb_Editor_Font_Props>Välj inställningar för typsnitt i MarcEditor</lb_Editor_Font_Props>
+		<lb_Engine_Diacritics>Diakriter:</lb_Engine_Diacritics>
+		<ck_engine_diacritics>Använd diakriter vid brytning (MARC-8)</ck_engine_diacritics>
+		<ck_engine_mnemonics>Visa mnemoniker (även om Unicode)</ck_engine_mnemonics>
+		<lb_Engine_XML_Options>Alternativ för XML:</lb_Engine_XML_Options>
+		<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+		<lb_engine_namespace>Använd namnrymd</lb_engine_namespace>
+		<lb_lang_font>Välj typsnitt för språk:</lb_lang_font>
+		<lb_Set_Lang>Välj språkpaket:</lb_Set_Lang>
+	</frmOptions>
+	<frmSelectMARCRecords>
+		<title>MarcEdit.NET: Ändra valda MARC-poster</title>
+		<columnHeader1>Postens nummer</columnHeader1>
+		<columnHeader2>Visa fält</columnHeader2>
+		<cmdImport>Importera fil</cmdImport>
+		<cmdfDelete>Ta bort valda</cmdfDelete>
+		<cmdExport>Exportera valda</cmdExport>
+		<lb_Search>Sök:</lb_Search>
+		<lb_DisplayField>Visa fält:</lb_DisplayField>
+		<lb_SourceFile>MARC källfil:</lb_SourceFile>
+		<ckSource>Spara ändrade poster i källfilen igen</ckSource>
+	</frmSelectMARCRecords>
+	<frmTools>
+		<title>MARC Tools</title>
+		<menu>
+			<mnuToolsXML>&amp;Redigera XML-funktionslista</mnuToolsXML>
+			<mnuToolsUTF8>MARC-&gt;UTF8 konvertering</mnuToolsUTF8>
+			<mnuToolsLC>&amp;Normalisera LC MARCMakr-format</mnuToolsLC>
+			<mnuToolsExport>E&amp;xportera MARC-poster</mnuToolsExport>
+			<mnuToolsExtract>Extrahera &amp;valda MARC-poster</mnuToolsExtract>
+		</menu>
+		<groupBox1>Filer:</groupBox1>
+		<lb_InputFile>Källfil:</lb_InputFile>
+		<lb_OutputFile>Målfil:</lb_OutputFile>
+		<groupBox2>MARC-funktioner</groupBox2>
+		<ck_UTF8>Översätt till UTF8</ck_UTF8>
+		<groupBox3>XML-konverteringar</groupBox3>
+		<lb_Results>Resultat:</lb_Results>
+		<cmdExecute>K&amp;ör</cmdExecute>
+		<cmdEdit>&amp;Ändra poster</cmdEdit>
+	</frmTools>
+	<frmUtilities>
+		<title>Dialogen verktyg</title>
+		<navbar>
+			<lnkExport>Exportera tabulatoravgränsade poster</lnkExport>
+			<lnklnkMARC8toUTF8.Text>MARC8-&gt;UTF8</lnklnkMARC8toUTF8.Text>
+			<lnkSplit>MARCSplit</lnkSplit>
+			<lnkJoin>MARCJoin</lnkJoin>
+		</navbar>
+		<lb_Tab_Header>Exportera tabulatoravgränsade poster</lb_Tab_Header>
+		<cmdTExport>&amp;Exportera</cmdTExport>
+		<cmdTAdd>&amp;Lägg till fält</cmdTAdd>
+		<cmdTDelete>&amp;Ta bort fält</cmdTDelete>
+		<ckTMarc>MARC</ckTMarc>
+		<lb_Join_Header>MARCJoin-verktyget</lb_Join_Header>
+		<lb_Join_Files>Fil(er) att lägga ihop:</lb_Join_Files>
+		<lb_Split_Header>MARCSplit-verktyget</lb_Split_Header>
+		<lb_Split_Folder>Målkatalog:</lb_Split_Folder>
+		<lb_Split_Records>Antal poster:</lb_Split_Records>
+		<lb_UTF8_Header>MARC-8 to UTF-8</lb_UTF8_Header>
+		<lb_UTF8_Dest>Målfil:</lb_UTF8_Dest>
+	</frmUtilities>
+	<TCPExport>
+		<title>Exportera poster</title>
+		<global>
+			<send>&amp;Skicka</send>
+			<host>Värdadress:</host>
+			<tranfer>För över fil:</tranfer>
+		</global>
+		<tbExport>TCP/IP</tbExport>
+		<tbPrint>Novell/LTP</tbPrint>
+		<lb_TCP_Port>Port:</lb_TCP_Port>
+		<lb_Serial_Printer_Name>Skrivarnamn:</lb_Serial_Printer_Name>
+	</TCPExport>
+	<xml_console>
+		<title>Ändra XML-funktioner</title>
+		<lb_Defined_Functions>Definierade funktioner:</lb_Defined_Functions>
+		<cmd_Add>&amp;Lägg till</cmd_Add>
+		<cmdDelete>&amp;Radera</cmdDelete>
+	</xml_console>
+	<xml_functions>
+		<global>
+			<marc>MARC</marc>
+			<marcxml>MARCXML</marcxml>
+			<other>Övrigt</other>
+		</global>
+		<title>Ändra XML-funktioner</title>
+		<lb_GenInfo>Allmän information:</lb_GenInfo>
+		<lb_Alias>Funktionsnamn (Alias):</lb_Alias>
+		<lb_XSLTPath>Sökväg till XSLT-stilmall:</lb_XSLTPath>
+		<lb_FormatInfo>Information om formatet:</lb_FormatInfo>
+		<lb_Origin>Ursprungligt format:</lb_Origin>
+		<lb_Final>Slutgiltigt format:</lb_Final>
+	</xml_functions>
+	<meEditor>
+		<title>MarcEditor</title>
+		<global>
+			<book>Bok</book>
+			<serial>Seriell publikation</serial>
+			<visualmaterial>Visuellt material</visualmaterial>
+			<maps>Karta</maps>
+			<sound>Ljudupptagning</sound>
+			<score>Not</score>
+			<electronic>Electronisk resurs</electronic>
+			<mixedmedia>Blandat material</mixedmedia>
+		</global>
+		<menu>
+			<mnuFileNew>&amp;Ny</mnuFileNew>
+			<mnuFileNewDefault>standard</mnuFileNewDefault>
+			<mnuFileRecent>Re¢ filer</mnuFileRecent>
+			<mnuFileNone>ingen</mnuFileNone>
+			<mnuFileSaveAs>Spara som</mnuFileSaveAs>
+			<mnuFilePrint>&amp;Skriv ut</mnuFilePrint>
+			<mnuFileCompile>Komp&amp;ilera filen till MARC</mnuFileCompile>
+			<mnuEdit>&amp;Ändra</mnuEdit>
+			<mnuEditUndo>&amp;Ångra</mnuEditUndo>
+			<mnuEditRedo>&amp;Upprepa</mnuEditRedo>
+			<mnuEditSpecialUndo>Ån&amp;gra special</mnuEditSpecialUndo>
+			<mnuEditCut>&amp;Klipp ut</mnuEditCut>
+			<mnuEditCopy>K&amp;opiera</mnuEditCopy>
+			<mnuEditPaste>K&amp;listra in</mnuEditPaste>
+			<mnuEditClear>Tö&amp;m</mnuEditClear>
+			<mnuEditFind>S&amp;ök</mnuEditFind>
+			<mnuEditReplace>&amp;Ersätt</mnuEditReplace>
+			<mnuEdit008>Infoga 00&amp;8</mnuEdit008>
+			<mnuEditALA>&amp;ALA teckenuppsättning</mnuEditALA>
+			<mnuEditSpelling>Kontrollera s&amp;tavning</mnuEditSpelling>
+			<mnuEditSelectAll>Ma&amp;rkera allt</mnuEditSelectAll>
+			<mnuEditWrap>&amp;Word Wrap-läge</mnuEditWrap>
+			<mnuEditInfo>MARC in&amp;fo</mnuEditInfo>
+			<mnuEditInfoOCLC>OCLC MARC-hjälp</mnuEditInfoOCLC>
+			<mnuEditInfoLC>MARC-hjälp vid U.S. Library of Congress</mnuEditInfoLC>
+			<mnuFont>T&amp;ypsnitt</mnuFont>
+			<mnuFontFont>Ty&amp;psnitt...</mnuFontFont>
+			<mnuFontColor>Färg...</mnuFontColor>
+			<mnuToolsLC>&amp;Normalisera LC-post</mnuToolsLC>
+			<mnuToolsAdd>&amp;Lägg till/ta bort fält</mnuToolsAdd>
+			<mnuToolsIndicator>Ändra &amp;indikator</mnuToolsIndicator>
+			<mnuToolsSubfield>Ändra data i &amp;delfält</mnuToolsSubfield>
+			<mnuToolsSort>S&amp;ortera fält</mnuToolsSort>
+			<mnuToolsSwap>&amp;Byt ut data i fält</mnuToolsSwap>
+			<mnuToolsOptions>&amp;Tillval</mnuToolsOptions>
+			<mnuView>&amp;Visa</mnuView>
+			<mnuViewToolbar>V&amp;erktygsfält</mnuViewToolbar>
+			<mnuViewStatus>&amp;Statusfält</mnuViewStatus>
+			<mnuReports>&amp;Rapporter</mnuReports>
+			<mnuReportsField>&amp;Antal fält</mnuReportsField>
+			<mnuReportsRobert>&amp;RobertCompare</mnuReportsRobert>
+			<mnuReportsValidate>&amp;MARCValidate</mnuReportsValidate>
+		</menu>
+		<tooltip>
+			<tbPrint>Skriv ut fil</tbPrint>
+			<tbCompile>Kompilera aktuell fil</tbCompile>
+			<tbCut>Klipp ut</tbCut>
+			<tbCopy>Kopiera</tbCopy>
+			<tbALA>ALA teckenuppsättning</tbALA>
+			<tbDelete>Radera</tbDelete>
+			<tbFind>Sök</tbFind>
+			<tbZ39_50>MarcEdit Z39.50-klient</tbZ39_50>
+		</tooltip>
+	</meEditor>
+	<messages>
+		<general>
+			<header>MarcEdit.NET</header>
+			<text_not_found>Texten hittades inte.</text_not_found>
+			<source_undefined>Käll/Målfil måste defineras.</source_undefined>
+			<output_undefined>Mål/utfil måste definieras.</output_undefined>
+			<alias_undefined>Alias måste definieras.</alias_undefined>
+			<xslt_undefined>Sökväg till XSLT måste definieras.</xslt_undefined>
+			<field_undefined>Fältet måste definieras.</field_undefined>
+			<fielddata_undefined>Fältets data måste definieras.</fielddata_undefined>
+			<subfield_undefined>Delfältet måste definieras.</subfield_undefined>
+			<item_undefined>Körningen kan inte slutföras. Inget valdes.</item_undefined>
+			<fields_added>{record_number} fält sattes till.</fields_added>
+			<fields_deleted>{record_number} fält togs bort.</fields_deleted>
+			<fields_selected>{record_number} poster togs bort.</fields_selected>
+			<records_deleted>Valda poster har raderats.</records_deleted>
+			<records_extracted>Valda poster har extraherats.</records_extracted>
+			<export_items_success>Objekten har exporterats till {file_path}</export_items_success>
+			<changes_made>{record_number} ändringar gjordes.</changes_made>
+			<no_changes>Inga ändringar gjordes.</no_changes>
+			<challenge_continue>Är du säker på att du vill fortsätta?</challenge_continue>
+			<challenge_file_has_changed>Filen har ändrats.  Vill du spara ändringarna?</challenge_file_has_changed>
+			<undefined_error>Okänt fel. Om du fortsättningsvis får detta fel, var vänlig och kontakta programmets upphovsman. Bifoga de nödvändiga stegen för att återskapa problemet.</undefined_error>
+			<undefined_processing_error>Okänt fel under körningen. Körningen kunde inte genomföras.</undefined_processing_error>
+			<valid_marc_error>Okänt fel. Kontrollera att denna fil är en riktig MARC-fil.</valid_marc_error>
+			<selected_error>Åtgärden kan inte genomföras. Ingenting har valts.</selected_error>
+			<temp_file_error>Körningen kunde inte genomföras. Applikationen kunde inte generera de nödvändiga temporära filerna.</temp_file_error>
+			<internal_error>Internt fel: {error_number}. Körningen kan inte genomföras.</internal_error>
+			<file_not_found_error>{file_path} hittades ej.</file_not_found_error>
+			<general_exception_error>Undantag: {exception_message}{newline}Exception Source: {exception_source}</general_exception_error>
+			<general_error>Felnummer: {error_number}{newline}Felmeddelande: {error_message}{newline}Radnummer: {line_number}</general_error>
+		</general>
+		<Field_Cound>
+			<status_window>Rapporten skapas...Var vänlig vänta</status_window>
+		</Field_Cound>
+		<frmSelectMARCRecords>
+			<status_bar>Bearbetar post {record_number}</status_bar>
+		</frmSelectMARCRecords>
+		<frmTools>
+			<txt_Results_Error>Felnummer: {error_number}</txt_Results_Error>
+			<txt_Results_Success>{recs_processed} poster bearbetades på {nnn} sekunder.</txt_Results_Success>
+			<txt_Results_Transform>Posterna har omvandlats på {nnn} sekunder.</txt_Results_Transform>
+		</frmTools>
+		<frmUtilities>
+			<uft8_status_success>{file_path} har konverterats till UTF-8 teckenuppsättning och sparats till {dest_path}.</uft8_status_success>
+			<lbCaption_Prepare>Förbereder filer för teckenkonvertering...</lbCaption_Prepare>
+			<lbCaption_ReBuild>Konstruerar om MARC-data...</lbCaption_ReBuild>
+			<lbCaption_Success>{record_number} poster bearbetades på {newline}{nnn} seconds.</lbCaption_Success>
+			<lbJoinStatus>Filerna har satts ihop till {file_path}</lbJoinStatus>
+			<txtSplitProgress_Success>{record_number} filer har skapats.</txtSplitProgress_Success>
+		</frmUtilities>
+		<meEditor>
+			<status_window>Läser in fil...Vänligen vänta.</status_window>
+			<status_bar_open>{file_path} laddas in på {nnn} sekunder.</status_bar_open>
+			<status_bar_save>{file_path} sparades på {nnn} sekunder.</status_bar_save>
+			<xml_load_undefined>Kunde inte läsa in. Denna typ av XML-fil är inte definierad.</xml_load_undefined>
+		</meEditor>
+	</messages>
+	<me_tabbed>
+		<label>
+			<header>Exportera tabulatoravgränsade poster</header>
+			<output>Målfil:</output>
+			<input>Källfil:</input>
+			<arguments>Argument</arguments>
+			<cdata>Konstanta data</cdata>
+			<punctuation>Term. punktuation:</punctuation>
+			<indicator>Indikatorer:</indicator>
+			<map_to>Mappa till:</map_to>
+			<select>Välj:</select>
+			<version>Version:</version>
+			<qualifier>Text Qualifier</qualifier>
+			<enter_character>Enter Character</enter_character>
+			<delimiter>Avgränsare</delimiter>
+			<summary>MarcEdits överättare för avgränsad text erbjuder en snabb och enkel metod för att konvertera filer med avgränsad text till MARC. Med hjälp av verktyget kan användaren definiera MARC-fält och indikatorer till individuella fält. Verktyget skapar automatiskt ett minimalt 008-fält för dina MARC-poster.  Notera att detta verktyg endast erbjuder en metod för att konvertera avgränsade data till MARC. Verktyget validerar inte fälten som skapats.</summary>
+			<finished_summary>&quot;MarcEdits översättare för avgränsad text har skapat en MARC-textfil: {file_path}.  Denna fil kan öppnas i MarcEditor om den ännu behöver redigeras. För att översätta denna fil till rått MARC-format, måste du använda &quot;remake&quot; på denna fil med MarcMaker.&quot;;</finished_summary>
+		</label>
+		<button>
+			<cancel>Avbryt</cancel>
+			<next>Nästa</next>
+			<finish>Avsluta</finish>
+			<save_template>Spara mall</save_template>
+			<load_template>Läs in mall</load_template>
+			<apply>Verkställ</apply>
+		</button>
+		<messages>
+			<no_save>Kunde inte skapa mallfilen...Avslutar.</no_save>
+			<not_compatible>Filformatet verkar vara inkompatibelt med detta verktyg. Vill du ändå fortsätta?</not_compatible>
+			<map_to_undefined>Mappning till fältet kan inte lämnas odefinierad.</map_to_undefined>
+			<subfield_undefined>MARC-fält större än 10 måste definiera en delfältskod.</subfield_undefined>
+			<needs_numeric>Data i fältet måste vara numeriska.  Exempel: 049$a</needs_numeric>
+		</messages>
+	</me_tabbed>
+</language>

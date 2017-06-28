@@ -1,0 +1,107 @@
+<html>
+<body>
+<script type="text/javascript">
+
+var xmlhttp=false;
+var stylesheet;
+var source;
+
+
+var xmlhttp=false;
+
+
+
+// JScript gives us Conditional compilation, we can cope with old IE versions.
+// and security blocked creation of the objects.
+ try {
+  xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  source = new ActiveXObject("Msxml2.DOMDocument.4.0"); 
+  stylesheet = new ActiveXObject("Msxml2.DOMDocument.4.0");
+ } catch (e) {
+  try {
+   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+   source = new ActiveXObject("Microsoft.DOMDocument"); 
+   stylesheet = new ActiveXObject("Microsoft.DOMDocument");
+  } catch (E) {
+   xmlhttp = false;
+  }
+ }
+
+
+if (xmlhttp) {
+      // load XSLT stylesheet document
+      stylesheet.async = false;
+
+        //var xmlDoc=new ActiveXObject("Microsoft.XMLDOM")
+        xmlDoc = source;
+        xmlDoc.async="false";
+        xmlDoc.load("remote_tut.xml");
+        //var xslDoc = new ActiveXObject("Microsoft.XMLDOM")
+        xslDoc = stylesheet;
+        xslDoc.async = false;
+        xslDoc.load("tut_style.xsl");
+        document.write (xmlDoc.transformNode(xslDoc));
+
+        xmlDoc.load("custom_tut.xml");
+        //var xslDoc = new ActiveXObject("Microsoft.XMLDOM")
+        xslDoc.async = false;
+        xslDoc.load("tut_style.xsl");
+        document.write (xmlDoc.transformNode(xslDoc));
+} else {
+ try {
+   var processor = new XSLTProcessor();  
+  
+var xslt =  document.implementation.createDocument("", "", null);  
+  
+xslt.async = false;  
+  
+xslt.load("tut_style.xsl");  
+  
+processor.importStylesheet(xslt);  
+  
+var src_doc =  document.implementation.createDocument("","", null);  
+  
+src_doc.async = false;  
+  
+src_doc.load("remote_tut.xml");  
+  
+var result = processor.transformToDocument(src_doc);  
+  
+var xmls = new XMLSerializer();  
+  
+var output =  xmls.serializeToString(result);  
+  
+document.write(output); 
+
+//first one
+
+try {
+xslt = document.implementation.createDocument("", "", null);  
+xslt.async = false;  
+  
+xslt.load("tut_style.xsl");  
+  
+processor.importStylesheet(xslt);  
+  
+src_doc = document.implementation.createDocument("","", null);  
+  
+  
+src_doc.async = false;  
+  
+src_doc.load("custom_tut.xml");  
+  
+var result = processor.transformToDocument(src_doc);  
+  
+var xmls = new XMLSerializer();  
+  
+var output =  xmls.serializeToString(result);  
+  
+document.write(output); 
+} catch (EE){}
+ } catch (E) {
+   
+   document.write("I'm sorry, but the MarcEdit help documentation is an XML-based application.  Because your browser does not support dynamic XML/XSLT transactions, the help files will not be able to function properly.");
+ }
+}
+</script>
+</body></html>

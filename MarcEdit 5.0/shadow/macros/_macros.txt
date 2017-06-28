@@ -1,0 +1,1 @@
+﻿test macro 1	C:\net_marcedit\C#\MProgram\MarcEdit\bin\Debug\macros\macrofile-2005_05_26_141419482.txt	ALT+F2

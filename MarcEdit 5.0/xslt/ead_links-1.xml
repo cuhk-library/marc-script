@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DIVISION = HTML BODY/@* values below  02-18-2004 -->
+
+<!-- 03/05/2004 -->
+<!-- Creator: Michael A. Ferrando -->
+<!-- Editor used: NoteTab Pro 4.5 -->
+<!-- EAD 2002 tag set -->
+<!-- Library of Congress best practices respected -->
+
+<links>
+	<division name="American Folklife Center" aggregate="af">
+		<link_color type="link">#009966</link_color>
+		<link_color type="vlink">#669999</link_color>
+		<link_color type="alink">#00CC99</link_color>
+	</division>
+	<division name="Geography &amp; Map" aggregate="gm">
+		<link_color type="link">#663333</link_color>
+		<link_color type="vlink">#006666</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+	<division name="Manuscript" aggregate="ms">
+		<link_color type="link">#663300</link_color>
+		<link_color type="vlink">#cc6600</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+	<division name="Motion Picture, Broadcasting &amp; Recorded Sound" aggregate="rs">
+		<link_color type="link">#000066</link_color>
+		<link_color type="vlink">#660000</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+	<division name="Music" aggregate="mu">
+		<link_color type="link">#336600</link_color>
+		<link_color type="vlink">#666600</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+	<division name="Prints &amp; Photographs" aggregate="pp">
+		<link_color type="link">#663366</link_color>
+		<link_color type="vlink">#993366</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+	<division name="Rare Book &amp; Special Collections" aggregate="rb">
+		<link_color type="link">#990000</link_color>
+		<link_color type="vlink">#CC9966</link_color>
+		<link_color type="alink">#CC0000</link_color>
+	</division>
+</links>
+
+<!-- african and middle eastern -->
+<!-- 
+	<link_color type="link">#666633</link_color>
+	<link_color type="vlink">#996633</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- american folklife -->
+<!-- 
+	<link_color type="link">#009966</link_color>
+	<link_color type="vlink">#669999</link_color>
+	<link_color type="alink">#00CC99</link_color> -->
+
+<!-- asian -->
+<!-- 
+	<link_color type="link">#006666</link_color>
+	<link_color type="vlink">#336666</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- children's literature center -->
+<!-- 
+	<link_color type="link">#000066</link_color>
+	<link_color type="vlink">#663333</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- european reading room -->
+<!-- 
+	<link_color type="link">#000099</link_color>
+	<link_color type="vlink">#996666</link_color>
+	<link_color type="alink">#FF0000</link_color> -->
+
+<!-- geography and map -->
+<!-- 
+	<link_color type="link">#663333</link_color>
+	<link_color type="vlink">#006666</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- hispanic reading room -->
+<!-- 
+	<link_color type="link">#000099</link_color>
+	<link_color type="alink">#0000ff</link_color>
+	<link_color type="vlink">#3366cc</link_color> -->
+
+<!-- law library -->
+<!-- 
+	<link_color type="link">#663333</link_color>
+	<link_color type="vlink">#996600</link_color>
+	<link_color type="alink">#990000</link_color> -->
+
+<!-- local history and geneology -->
+<!-- 
+	<link_color type="link">#666633</link_color>
+	<link_color type="vlink">#996633</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- main reading room -->
+<!-- 
+	<link_color type="link">#993333</link_color>
+	<link_color type="vlink">#996600</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- mss -->
+<!-- 
+	<link_color type="link">#663300</link_color>
+	<link_color type="vlink">#cc6600</link_color> -->
+
+<!-- microform -->
+<!-- 
+	<link_color type="link">#669966</link_color>
+	<link_color type="vlink">#666633</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- motion picture and recorded sound -->
+<!-- 
+	<link_color type="link">#990000</link_color>
+	<link_color type="vlink">#996666</link_color> -->
+
+<!-- music -->
+<!-- 
+	<link_color type="link">#006600</link_color>
+	<link_color type="vlink">#669999</link_color> -->
+
+<!-- newspapers and periodicals -->
+<!-- 
+	<link_color type="link">#336699</link_color>
+	<link_color type="vlink">#666666</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- p &amp; p -->
+<!-- 
+	<link_color type="link">#663366</link_color>
+	<link_color type="vlink">#993366</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- rare book -->
+<!-- 
+	<link_color type="link">#990000</link_color>
+	<link_color type="vlink">#CC9966</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- recorded sound reference section -->
+<!-- 
+	<link_color type="link">#000066</link_color>
+	<link_color type="vlink">#660000</link_color>
+	<link_color type="alink">#CC0000</link_color> -->
+
+<!-- science -->
+<!-- 
+	<link_color type="link">#006633</link_color>
+	<link_color type="vlink">#666600</link_color>
+	<link_color type="alink">#CC0000</link_color> -->

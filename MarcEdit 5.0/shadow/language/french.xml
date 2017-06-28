@@ -1,0 +1,460 @@
+<?xml version="1.0" ?>
+<language>
+<id>French</id>
+<global>
+<menu>
+<file>&amp;Fichier</file>
+<exit>&amp;Quitter</exit>
+<tools>&amp;Outils</tools>
+<errorreport>&amp;Suggestions/Rapport d'erreurs</errorreport>
+<mainwindow>&amp;Retour à la fenêtre principale</mainwindow>
+<open>O&amp;uvrir</open>
+<save>&amp;Enregistrer</save>
+<help>&amp;Aide</help>
+<contents_help>&amp;Contenu et Aide</contents_help>
+<marcbreaker>Marc&amp;Breaker</marcbreaker>
+<marcmaker>Marc&amp;Maker</marcmaker>
+<marceditor>Marc&amp;Editor</marceditor>
+<robertcompare>&amp;RobertCompare</robertcompare>
+<marcvalidate>&amp;MARCValidate</marcvalidate>
+<z3950>MarcEdit &amp;Z39.50 Client</z3950>
+</menu>
+<tooltip>
+<open>Ouvrir le fichier</open>
+<save>Enregistrer le fichier</save>
+<export>Exporter les documents</export>
+<help>Aide</help>
+</tooltip>
+<labels>
+<subfield>Sous-champ :</subfield>
+<field>CHamp :</field>
+<about>A propos de MarcEdit.NET</about>
+<source_file>Fichier source :</source_file>
+<marcbreaker>MarcBreaker</marcbreaker>
+<marcmaker>MarcMaker</marcmaker>
+<marceditor>MarcEditor</marceditor>
+<scriptmaker>MarcEdit Script Maker</scriptmaker>
+<marctoxml>MARC=&gt;MARC21XML</marctoxml>
+<xmltomarc>MARC21XML=&gt;MARC</xmltomarc>
+<field>Champ</field>
+</labels>
+<buttons>
+<process>&amp;Traiter</process>
+<apply>&amp;Appliquer</apply>
+<ok>&amp;OK</ok>
+<close>&amp;Fermer</close>
+<replace>&amp;Remplacer</replace>
+<about>A &amp;propos de MarcEdit.NET</about>
+<modify>&amp;Modifier</modify>
+<default>Définir les paramètre par défaut</default>
+</buttons>
+<messages>
+<status_bar>Fichier en cours de traitement...veuillez patienter.</status_bar>
+<processing_complete>Traitement terminé !</processing_complete>
+<processing_start>Démarrage du traitement....</processing_start>
+</messages>
+</global>
+<Field_Count>
+<title>Field Count</title>
+<cmenu>
+<cmenuClipboard>Copy to Clipboard</cmenuClipboard>
+<cmenuSubfields>Count Subfields</cmenuSubfields>
+</cmenu>
+<lb_ReportStyle>Report Style:</lb_ReportStyle>
+<opt_tab>Tab Delimited Report</opt_tab>
+<opt_xml>XML Report</opt_xml>
+<opt_html>HTML Report</opt_html>
+<cmd_Report>&amp;Generate Report</cmd_Report>
+</Field_Count>
+<FindReplace>
+<title>Find/Replace:</title>
+<tbFind>Find</tbFind>
+<tbReplace>Replace</tbReplace>
+<lb_FindWhat>Find what:</lb_FindWhat>
+<cmdFFind>&amp;Find</cmdFFind>
+<groupBox1>Search Options:</groupBox1>
+<ck_f_whole_word>Find whole word only</ck_f_whole_word>
+<ck_f_match_case>Match case</ck_f_match_case>
+<lb_ReplaceWith>Replace with:</lb_ReplaceWith>
+<ck_R_Case>Match case</ck_R_Case>
+<ck_R_RegExp>Use regular expressions</ck_R_RegExp>
+<cmd_R_Replace>&amp;Replace</cmd_R_Replace>
+<cmd_R_All>Replace &amp;All</cmd_R_All>
+</FindReplace>
+<frmAbout>
+<title>About MarcEdit.NET</title>
+<lbVersion>Version:</lbVersion>
+<lbAuthor>Author:</lbAuthor>
+<lbMod>Modified:</lbMod>
+<txt_info>The MarcEngine has been designed to support the MARC format, regardless of flavor (eg. MARC21, UNIMARC, etc.)		The MarcEngine has been designed to support the MARCXML Schema developed by the U.S. Library of Congress		The MarcEngine has been designed with an XML API to provide support for other XML schemas.		MarcEdit Z39.50 Yaz Client makes use of Index Data's Yaz Z39.50 library.  For Index Data license information, please see the MarcEdit help file under 3rd party software.</txt_info>
+<lbInfo>More Information:</lbInfo>
+<lbThanks>I'd like to thank Oregon State University Libraries for their continued support of the MarcEdit project.</lbThanks>
+</frmAbout>
+<frmBatchEdit>
+<title>MarcEdit.NET Batch Editing Tools</title>
+<navbar>
+<lnkAddDelete>Add/Delete Field</lnkAddDelete>
+<lnkSubfield>Edit Subfield Data</lnkSubfield>
+<lnkIndicators>Edit Indicators</lnkIndicators>
+<lnkSwapFields>Swap Fields</lnkSwapFields>
+</navbar>
+<globals>
+<lb_Field>Field:</lb_Field>
+<lb_Subfield>Subfield:</lb_Subfield>
+<lb_Position>Position:</lb_Position>
+<lb_FieldData>Field Data:</lb_FieldData>
+<lb_ReplaceWith>Replace with:</lb_ReplaceWith>
+<lb_Indicator>Indicators:</lb_Indicator>
+<lb_SearchOptions>Search Options</lb_SearchOptions>
+<lb_MatchCase>Match case</lb_MatchCase>
+<lb_RegEx>Use regular expression</lb_RegEx>
+</globals>
+<lb_A_Title>Add/Delete Field Utility</lb_A_Title>
+<ck_A_Insert>Insert before</ck_A_Insert>
+<ck_A_not_present>Add field only if not present</ck_A_not_present>
+<cmd_A_Delete>&amp;Delete Field</cmd_A_Delete>
+<cmd_A_Add>&amp;Add Field</cmd_A_Add>
+<lb_Sub_Title>Edit Subfield Utility</lb_Sub_Title>
+<cmd_Sub_Replace>&amp;Replace Text</cmd_Sub_Replace>
+<cmd_Sub_Remove>R&amp;emove Text</cmd_Sub_Remove>
+<ck_Sub_New>New subfield only</ck_Sub_New>
+<ck_Sub_NotPresent>Add subfield if not present</ck_Sub_NotPresent>
+<lb_Ind_Title>Edit Indicator Utilities</lb_Ind_Title>
+<lb_Ind_Replace>Replace Indicators</lb_Ind_Replace>
+<cmd_I_Replace>&amp;Replace</cmd_I_Replace>
+<lb_Swap_Title>Swap Field Utility</lb_Swap_Title>
+<ck_Swap_Copy>Copy Source</ck_Swap_Copy>
+<ck_Swap_Add>Add to existing field</ck_Swap_Add>
+<ck_Swap_Override>Override Default Behavior</ck_Swap_Override>
+<cmd_Swap_Process>&amp;Process</cmd_Swap_Process>
+<label20>Modified Data:</label20>
+</frmBatchEdit>
+<frmMain>
+<title>MarcEdit by Terry Reese</title>
+<menu>
+<mnuFiletools>MARC Tools</mnuFiletools>
+<mnuTools>&amp;Tools</mnuTools>
+<mnuToolsSelect>Select MARC Records</mnuToolsSelect>
+<mnuToolsDelete>&amp;Delete Selected Records</mnuToolsDelete>
+<mnuToolsExtract>Extract &amp;Selected Records</mnuToolsExtract>
+<mnuToolsTabbed>Export &amp;Tabbed Delimited Records</mnuToolsTabbed>
+<mnuToolsGateway>E&amp;port MARC Records</mnuToolsGateway>
+<mnuToolsJoin>MARC&amp;Join</mnuToolsJoin>
+<mnuToolsSplit>&amp;MARCSplit</mnuToolsSplit>
+<mnuToolsPreferences>&amp;Preferences</mnuToolsPreferences>
+<mnuAddins>&amp;Add-ins</mnuAddins>
+<mnuAddinTranslator>&amp;Delimited Text Translator</mnuAddinTranslator>
+<mnuAddinTutorial>Local &amp;Tutorial Manager</mnuAddinTutorial>
+<mnuAddinScript>&amp;Script Maker</mnuAddinScript>
+<mnuHelpList>Join MarcEdit &amp;Notification List</mnuHelpList>
+</menu>
+<navbar>
+<lnkStart>StartPage</lnkStart>
+<lnkTools>MARC Tools</lnkTools>
+<lnkAddin>Add-ins</lnkAddin>
+<lnkHelp>Help</lnkHelp>
+<lnkAbout>About</lnkAbout>
+</navbar>
+<label2>Frequently Used Tools:</label2>
+<startHelp>MarcEdit.NET Help</startHelp>
+<lbWhatsNew>What's New in MarcEdit.NET</lbWhatsNew>
+<lnkpTools>MARC Tools Main Window</lnkpTools>
+<lbpTools>Access the MARC Tools main window</lbpTools>
+<lb_pBreaker>The MarcBreaker allows users to break MARC data into a plain mnemonic format.</lb_pBreaker>
+<lb_pMaker>The MarcMaker allows users to compile MarcEdit's mnemonic file format back into MARC</lb_pMaker>
+<lb_pXMLm>Converts MARC data to the U.S. Library of Congress MARC21Slim format.</lb_pXMLm>
+<lb_pEditor>MarcEdit's built-in notepad designed specifically for editing MARC records.</lb_pEditor>
+<lnkADelimited>Delimited Text Translator</lnkADelimited>
+<lnkATutorial>Local Tutorial Manager</lnkATutorial>
+<lb_ATutorial>Manage local and community created tutorials for MarcEdit</lb_ATutorial>
+<lb_ADelimited>Import delimited data into MarcEdit's mnemonic file format.</lb_ADelimited>
+<lb_AScript>The MarcEdit Script Maker is a small utility designed to help users create vbscripts to perform more advanced tasks.</lb_AScript>
+<lnkHIndex>Contents and Index</lnkHIndex>
+<lnkHError>Suggestions/Error Report</lnkHError>
+<lb_HIndex>Open's MarcEdit's Help System.</lb_HIndex>
+<lnkHTutorial>View Tutorials</lnkHTutorial>
+<lb_HTutorial>View all tutorials currently associated with MarcEdit.</lb_HTutorial>
+<lnkHNotify>Join MarcEdit's Notification List</lnkHNotify>
+<lb_HNotify>Join the MarcEdit Notification list for updates and information on MarcEdit's development.</lb_HNotify>
+<lb_HError>Have something to say?  Click here to send it to the author.</lb_HError>
+<lb_AboutDesc>Here's the real genius behind MarcEdit.  I just put my name on it :-&gt;  If you'd like to find out a little bit more about me or my family, please click here:</lb_AboutDesc>
+</frmMain>
+<frmOptions>
+<title>MarcEdit Properties</title>
+<tabFile>Files</tabFile>
+<tabExport>Export</tabExport>
+<tabEditor>MarcEditor</tabEditor>
+<tabEngine>MARCEngine</tabEngine>
+<tabLang>Language</tabLang>
+<lb_SetFileOptions>Set File Options:</lb_SetFileOptions>
+<ckmrc>Associate (*.mrc) files with MarcBreaker</ckmrc>
+<ckmrk>Associate (*.mrk*) files with MarcEditor</ckmrk>
+<ckexport>Add export option to Context Menu</ckexport>
+<ckpreview>Add preview options to Context Menu</ckpreview>
+<lb_FileAssociate_1>Associate (*</lb_FileAssociate_1>
+<lb_FileAssociate_2>) file type with the:</lb_FileAssociate_2>
+<cmd_tEdit>Edit Type</cmd_tEdit>
+<lb_TCPIP_Props>TCP/IP Properties:</lb_TCPIP_Props>
+<lb_TCP_Host>Host Address:</lb_TCP_Host>
+<lb_TCP_Port>Port:</lb_TCP_Port>
+<lb_TCP_Timeout>Timeout:</lb_TCP_Timeout>
+<ck_export_output>Export Receipt (capture ILS output)</ck_export_output>
+<lb_Serial_Settings>Printer/Novell Settings:</lb_Serial_Settings>
+<lb_Serial_Printer_Name>Printer Name:</lb_Serial_Printer_Name>
+<lb_Editor_Template>Set MarcEditor Template:</lb_Editor_Template>
+<lb_Current_Template>Current Template:</lb_Current_Template>
+<cmd_editor_set_font>S&amp;et Font</cmd_editor_set_font>
+<lb_Editor_Font_Props>Set MarcEditor Font Properties:</lb_Editor_Font_Props>
+<lb_Engine_Diacritics>Diacritics:</lb_Engine_Diacritics>
+<ck_engine_diacritics>Use diacritics when breaking (MARC-8)</ck_engine_diacritics>
+<ck_engine_mnemonics>Display mnemonics (even if Unicode)</ck_engine_mnemonics>
+<lb_Engine_XML_Options>XML Options:</lb_Engine_XML_Options>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<lb_engine_namespace>Use Namespace</lb_engine_namespace>
+<lb_lang_font>Set Language Font:</lb_lang_font>
+<lb_Set_Lang>Set Language Pack:</lb_Set_Lang>
+</frmOptions>
+<frmSelectMARCRecords>
+<title>MarcEdit.NET: Modify Selected MARC Records</title>
+<columnHeader1>Record Number</columnHeader1>
+<columnHeader2>Display Field</columnHeader2>
+<cmdImport>Import File</cmdImport>
+<cmdfDelete>Delete Selected</cmdfDelete>
+<cmdExport>Export Selected</cmdExport>
+<lb_Search>Search:</lb_Search>
+<lb_DisplayField>Display Field:</lb_DisplayField>
+<lb_SourceFile>Source MARC File:</lb_SourceFile>
+<ckSource>Resave modified records in source</ckSource>
+</frmSelectMARCRecords>
+<frmTools>
+<title>MARC Tools</title>
+<menu>
+<mnuToolsXML>&amp;Edit XML Function List</mnuToolsXML>
+<mnuToolsUTF8>MARC-&gt;UTF8 Conversion</mnuToolsUTF8>
+<mnuToolsLC>&amp;Normalize LC MARCMakr format</mnuToolsLC>
+<mnuToolsExport>E&amp;xport MARC Records</mnuToolsExport>
+<mnuToolsExtract>Extract &amp;Selected MARC Records</mnuToolsExtract>
+</menu>
+<groupBox1>Files:</groupBox1>
+<lb_InputFile>Input File:</lb_InputFile>
+<lb_OutputFile>Output File:</lb_OutputFile>
+<groupBox2>MARC Functions</groupBox2>
+<ck_UTF8>Translate to UTF8</ck_UTF8>
+<groupBox3>XML Conversions</groupBox3>
+<lb_Results>Results:</lb_Results>
+<cmdExecute>E&amp;xecute</cmdExecute>
+<cmdEdit>E&amp;dit Records</cmdEdit>
+</frmTools>
+<frmUtilities>
+<title>Utilities Dialog</title>
+<navbar>
+<lnkExport>Export Tab Delimited Records</lnkExport>
+<lnklnkMARC8toUTF8.Text>MARC8-&gt;UTF8</lnklnkMARC8toUTF8.Text>
+<lnkSplit>MARCSplit</lnkSplit>
+<lnkJoin>MARCJoin</lnkJoin>
+</navbar>
+<lb_Tab_Header>Export Tab Delimited Records</lb_Tab_Header>
+<cmdTExport>&amp;Export</cmdTExport>
+<cmdTAdd>&amp;Add Field</cmdTAdd>
+<cmdTDelete>&amp;Delete Field</cmdTDelete>
+<ckTMarc>MARC</ckTMarc>
+<lb_Join_Header>MARCJoin Utility</lb_Join_Header>
+<lb_Join_Files>File(s) to Join:</lb_Join_Files>
+<lb_Split_Header>MARCSplit Utility</lb_Split_Header>
+<lb_Split_Folder>Destination Folder:</lb_Split_Folder>
+<lb_Split_Records># of Records:</lb_Split_Records>
+<lb_UTF8_Header>MARC-8 to UTF-8</lb_UTF8_Header>
+<lb_UTF8_Dest>Destination File:</lb_UTF8_Dest>
+</frmUtilities>
+<TCPExport>
+<title>Export Records</title>
+<global>
+<send>&amp;Send</send>
+<host>Host Address:</host>
+<tranfer>Transfer File:</tranfer>
+</global>
+<tbExport>TCP/IP</tbExport>
+<tbPrint>Novell/LTP</tbPrint>
+<lb_TCP_Port>Port:</lb_TCP_Port>
+<lb_Serial_Printer_Name>Printer Name:</lb_Serial_Printer_Name>
+</TCPExport>
+<xml_console>
+<title>Edit XML Functions</title>
+<lb_Defined_Functions>Defined Functions:</lb_Defined_Functions>
+<cmd_Add>&amp;Add</cmd_Add>
+<cmdDelete>&amp;Delete</cmdDelete>
+</xml_console>
+<xml_functions>
+<global>
+<marc>MARC</marc>
+<marcxml>MARCXML</marcxml>
+<other>Other</other>
+</global>
+<title>Edit XML Functions</title>
+<lb_GenInfo>General Information:</lb_GenInfo>
+<lb_Alias>Function Name (Alias):</lb_Alias>
+<lb_XSLTPath>XSLT Stylesheet Path:</lb_XSLTPath>
+<lb_FormatInfo>Format Information:</lb_FormatInfo>
+<lb_Origin>Original Format:</lb_Origin>
+<lb_Final>Final Format:</lb_Final>
+</xml_functions>
+<meEditor>
+<title>MarcEditor</title>
+<global>
+<book>Book</book>
+<serial>Serial</serial>
+<visualmaterial>Visual Material</visualmaterial>
+<maps>Cartographic Resource</maps>
+<sound>Sound Recording</sound>
+<score>Score</score>
+<electronic>Electronic Resource</electronic>
+<mixedmedia>Mixed Material</mixedmedia>
+</global>
+<menu>
+<mnuFileNew>&amp;New</mnuFileNew>
+<mnuFileNewDefault>default</mnuFileNewDefault>
+<mnuFileRecent>Re¢ Files</mnuFileRecent>
+<mnuFileNone>none</mnuFileNone>
+<mnuFileSaveAs>Save As</mnuFileSaveAs>
+<mnuFilePrint>&amp;Print</mnuFilePrint>
+<mnuFileCompile>Comp&amp;ile file into MARC</mnuFileCompile>
+<mnuEdit>&amp;Edit</mnuEdit>
+<mnuEditUndo>&amp;Undo</mnuEditUndo>
+<mnuEditRedo>Re&amp;Do</mnuEditRedo>
+<mnuEditSpecialUndo>Special U&amp;ndo</mnuEditSpecialUndo>
+<mnuEditCut>Cu&amp;t</mnuEditCut>
+<mnuEditCopy>&amp;Copy</mnuEditCopy>
+<mnuEditPaste>&amp;Paste</mnuEditPaste>
+<mnuEditClear>Cl&amp;ear</mnuEditClear>
+<mnuEditFind>&amp;Find</mnuEditFind>
+<mnuEditReplace>&amp;Replace</mnuEditReplace>
+<mnuEdit008>Insert 00&amp;8</mnuEdit008>
+<mnuEditALA>A&amp;LA characterset</mnuEditALA>
+<mnuEditSpelling>Check &amp;Spelling</mnuEditSpelling>
+<mnuEditSelectAll>Select &amp;All</mnuEditSelectAll>
+<mnuEditWrap>&amp;Word Wrap</mnuEditWrap>
+<mnuEditInfo>&amp;MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC Help</mnuEditInfoOCLC>
+<mnuEditInfoLC>U.S. Library of Congress MARC Help</mnuEditInfoLC>
+<mnuFont>&amp;Fonts</mnuFont>
+<mnuFontFont>&amp;Font...</mnuFontFont>
+<mnuFontColor>&amp;Color...</mnuFontColor>
+<mnuToolsLC>&amp;Normalize LC Record</mnuToolsLC>
+<mnuToolsAdd>&amp;Add/Delete Field</mnuToolsAdd>
+<mnuToolsIndicator>Edit &amp;Indicator Data</mnuToolsIndicator>
+<mnuToolsSubfield>Edit &amp;Subfield Data</mnuToolsSubfield>
+<mnuToolsSort>S&amp;ort Fields</mnuToolsSort>
+<mnuToolsSwap>Swa&amp;p Field Data</mnuToolsSwap>
+<mnuToolsOptions>Op&amp;tions</mnuToolsOptions>
+<mnuView>&amp;View</mnuView>
+<mnuViewToolbar>T&amp;oolbar</mnuViewToolbar>
+<mnuViewStatus>&amp;Status Bar</mnuViewStatus>
+<mnuReports>&amp;Reports</mnuReports>
+<mnuReportsField>&amp;Field Count</mnuReportsField>
+<mnuReportsRobert>&amp;RobertCompare</mnuReportsRobert>
+<mnuReportsValidate>&amp;MARCValidate</mnuReportsValidate>
+</menu>
+<tooltip>
+<tbPrint>Print File</tbPrint>
+<tbCompile>Compile Current File</tbCompile>
+<tbCut>Cut</tbCut>
+<tbCopy>Copy</tbCopy>
+<tbALA>ALA Characterset</tbALA>
+<tbDelete>Delete</tbDelete>
+<tbFind>Find</tbFind>
+<tbZ39_50>MarcEdit Z39.50 Client</tbZ39_50>
+</tooltip>
+</meEditor>
+<messages>
+<general>
+<header>MarcEdit.NET</header>
+<text_not_found>Text not found.</text_not_found>
+<source_undefined>Source/Input file cannot be left undefined.</source_undefined>
+<output_undefined>Destination/Output file cannot be left undefined.</output_undefined>
+<alias_undefined>Alias cannot be left undefined.</alias_undefined>
+<xslt_undefined>XSLT Path cannot be left undefined.</xslt_undefined>
+<field_undefined>Field cannot be left undefined.</field_undefined>
+<fielddata_undefined>Field data cannot be left undefined.</fielddata_undefined>
+<subfield_undefined>Subfield cannot be left undefined.</subfield_undefined>
+<item_undefined>Operation cannot be completed.  No item was selected.</item_undefined>
+<fields_added>{record_number} fields were added.</fields_added>
+<fields_deleted>{record_number} fields were deleted.</fields_deleted>
+<fields_selected>{record_number} records have been selected.</fields_selected>
+<records_deleted>Selected records have been deleted.</records_deleted>
+<records_extracted>Selected records have been extracted.</records_extracted>
+<export_items_success>Items have been exported to {file_path}</export_items_success>
+<changes_made>{record_number} modifications were made.</changes_made>
+<no_changes>No modifications were made.</no_changes>
+<challenge_continue>Are you sure you want to continue?</challenge_continue>
+<challenge_file_has_changed>The file has changed.  Would you like to save the changes?</challenge_file_has_changed>
+<undefined_error>Undefined error.  If you continue to recieve this error, please contact the author including the steps necessary to recreate the problem.</undefined_error>
+<undefined_processing_error>Undefined processing error.  Operation could not be completed.</undefined_processing_error>
+<valid_marc_error>Undefined error.  Please make certain that this file is valid MARC.</valid_marc_error>
+<selected_error>The requested action cannot be completed.  No item has been selected.</selected_error>
+<temp_file_error>Operation could not be completed.  Application could not generate the necessary temporary files.</temp_file_error>
+<internal_error>Internal Error: {error_number}.  Process cannot be completed.</internal_error>
+<file_not_found_error>{file_path} cannot be found.</file_not_found_error>
+<general_exception_error>Exception Message: {exception_message}{newline}Exception Source: {exception_source}</general_exception_error>
+<general_error>Error Number: {error_number}{newline}Error Message: {error_message}{newline}Line Number: {line_number}</general_error>
+</general>
+<Field_Cound>
+<status_window>Generating Report...Please wait</status_window>
+</Field_Cound>
+<frmSelectMARCRecords>
+<status_bar>Processing Record {record_number}</status_bar>
+</frmSelectMARCRecords>
+<frmTools>
+<txt_Results_Error>Error Number: {error_number}</txt_Results_Error>
+<txt_Results_Success>{recs_processed} records were processed in {nnn} seconds.</txt_Results_Success>
+<txt_Results_Transform>Records have been transformed in {nnn} seconds.</txt_Results_Transform>
+</frmTools>
+<frmUtilities>
+<uft8_status_success>{file_path} has been converted to the UTF-8 characterset and saved to {dest_path}.</uft8_status_success>
+<lbCaption_Prepare>Preparing files for character conversion...</lbCaption_Prepare>
+<lbCaption_ReBuild>Re-constructing MARC data...</lbCaption_ReBuild>
+<lbCaption_Success>{record_number} records were processed in {newline}{nnn} seconds.</lbCaption_Success>
+<lbJoinStatus>Files have been combined to {file_path}</lbJoinStatus>
+<txtSplitProgress_Success>{record_number} files have been generated.</txtSplitProgress_Success>
+</frmUtilities>
+<meEditor>
+<status_window>Loading file...Please wait.</status_window>
+<status_bar_open>{file_path} loading in {nnn} seconds.</status_bar_open>
+<status_bar_save>{file_path} saved in {nnn} seconds.</status_bar_save>
+<xml_load_undefined>Unable to load.  This XML file type is undefined.</xml_load_undefined>
+</meEditor>
+</messages>
+<me_tabbed>
+<label>
+<header>Export Tabbed Delimited Records</header>
+<output>Output File:</output>
+<input>Input File:</input>
+<arguments>Arguments</arguments>
+<cdata>Constant Data</cdata>
+<punctuation>Term. Punctuation:</punctuation>
+<indicator>Indicators:</indicator>
+<map_to>Map To:</map_to>
+<select>Select:</select>
+<version>Version:</version>
+<qualifier>Text Qualifier</qualifier>
+<enter_character>Enter Character</enter_character>
+<delimiter>Delimiter</delimiter>
+<summary>The MarcEdit Delimited Text Translator provides a quick and easy method for converting delimited text files into MARC.  The utility allows users to define MARC Fields and indicators to individual fields and automatically creates a minimal 008 for your MARC records.  Please be aware however, this utility just provides a method to convert delimited data to MARC.  This utility will not do validation on the fields created.</summary>
+<finished_summary>&quot;MarcEdit's Delimited Text Translator has successfully created a MARC Text file at: {file_path}.  This file can be viewed/edited in the MarcEditor if further manipulation is required.  To translate this file into raw MARC, you must &quot;remake&quot; this file using the MarcMaker.&quot;;</finished_summary>
+</label>
+<button>
+<cancel>Cancel</cancel>
+<next>Next</next>
+<finish>Finish</finish>
+<save_template>Save Template</save_template>
+<load_template>Load Template</load_template>
+<apply>Apply</apply>
+</button>
+<messages>
+<no_save>Template file could not be written...Quitting.</no_save>
+<not_compatible>The file format seems to be incompatible with this utility.  Do you wish to continue anyway?</not_compatible>
+<map_to_undefined>Map to field cannot be left undefined.</map_to_undefined>
+<subfield_undefined>MARC fields greater than 10 must define a subfield code.</subfield_undefined>
+<needs_numeric>Field data must be numeric.  Example: 049$a</needs_numeric>
+</messages>
+</me_tabbed>
+</language>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language name="US-ENGLISH">
+	<global>
+		<tooltip>
+			<load>Load File</load>
+		</tooltip>
+		<labels>
+			<field>Field</field>
+		</labels>
+	</global>
+	<frmBatchEdit>
+		<ck_dedup>Remove Duplicate Data</ck_dedup>
+	</frmBatchEdit>
+	<frmMain>
+		<global />
+		<menu>
+			<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+			<mnuAddinURL>&amp;Verify URLs</mnuAddinURL>
+		</menu>
+		<lnkAURL>Verify URLs</lnkAURL>
+		<lb_AURL>Verify all, most or some URLs in a MARC file.  Generates HTML or XML based reports.</lb_AURL>
+	</frmMain>
+	<frmSelectMARCRecords>
+		<cmdfRandom>Select Random</cmdfRandom>
+	</frmSelectMARCRecords>
+	<frmTools>
+		<menu>
+			<mnuToolsEncoding>Character Conversion Tools</mnuToolsEncoding>
+			<mnuToolsMARC8>UTF8-&gt;MARC Conversion</mnuToolsMARC8>
+		</menu>
+		<ck_Marc8>Translate to MARC-8</ck_Marc8>
+	</frmTools>
+	<frmUtilities>
+		<navbar>
+			<lnklnkMARC8toUTF8>MARC8-&gt;UTF8</lnklnkMARC8toUTF8>
+			<lnkUTF8toMARC8>UTF8-&gt;MARC8</lnkUTF8toMARC8>
+		</navbar>
+		<lb_MARC8_Header>UTF-8 to MARC-8</lb_MARC8_Header>
+		<lb_encoding>Original Encoding:</lb_encoding>
+	</frmUtilities>
+	<xml_functions>
+		<ck_Marc8>Convert to MARC8</ck_Marc8>
+	</xml_functions>
+	<meEditor>
+		<global>
+			<authority>Authority</authority>
+			<authorityname>Name</authorityname>
+			<authoritysubject>Subject</authoritysubject>
+		</global>
+		<menu>
+			<mnuFilePrintPreview>Print Pre&amp;view</mnuFilePrintPreview>
+			<mnuToolsMacros>Assigned Macros</mnuToolsMacros>
+			<mnuToolsCMacros>Manage Macros</mnuToolsCMacros>
+			<mnutoolsurl>&amp;Generate MARC from URL</mnutoolsurl>
+			<mnuToolsOAI>&amp;Harvest from OAI</mnuToolsOAI>
+		</menu>
+	</meEditor>
+	<frmOAIHarvest>
+		<title>Metadata Harvester</title>
+		<lbTitle>Harvest OAI to MARC</lbTitle>
+		<lbServer>Server Address:</lbServer>
+		<lbSet>Set Name:</lbSet>
+		<lbMetadata>Metadata Type:</lbMetadata>
+		<lbCrosswalk>Crosswalk Path:</lbCrosswalk>
+	</frmOAIHarvest>
+	<frmMacroManager>
+		<title>MarcEditor Macro Manager</title>
+		<lbMacro>Macros:</lbMacro>
+		<lbActions>Actions:</lbActions>
+		<lnkNew>Create New Macro</lnkNew>
+		<lnkDelete>Delete Selected Macro</lnkDelete>
+		<lnkEdit>Edit Selected Macro</lnkEdit>
+		<lnkKey>Key Assignment</lnkKey>
+	</frmMacroManager>
+	<frmConstantData>
+		<title>Edit Constant Data</title>
+		<lbMacro>Constant Data:</lbMacro>
+		<lbActions>Actions:</lbActions>
+		<lnkNew>Create New String</lnkNew>
+		<lnkDelete>Delete Selected String</lnkDelete>
+		<lnkEdit>Edit Selected String</lnkEdit>
+		<lnkKey>Key Assignment</lnkKey>
+	</frmConstantData>
+	<frmScript>
+		<title>Edit Script</title>
+	</frmScript>
+	<frmCatalogCalculator>
+		<title>Kyle Banerjee's Cataloging Calculator</title>
+		<lbSearch>Find:</lbSearch>
+		<lbResults>Results:</lbResults>
+		<lnkCatalog>Kyle Banerjee's Catalog Calculator</lnkCatalog>
+	</frmCatalogCalculator>
+	<frmTutorialManager>
+		<title>Local Tutorial Manager</title>
+		<lbAdd>Add Tutorials</lbAdd>
+		<lbTitle>Title:</lbTitle>
+		<lbDescription>Description:</lbDescription>
+		<lburl>URL:</lburl>
+		<lbModified>Modified:</lbModified>
+		<lbTutorial>Tutorials:</lbTutorial>
+		<lnkAdd>Add/Modify</lnkAdd>
+		<lnkDelete>Delete</lnkDelete>
+	</frmTutorialManager>
+	<frmSpecial_Formats>
+		<title>CDS-ISIS .iso =&gt; MARC Translation</title>
+		<lb_title>CDS-ISIS =&gt; MARC Translation</lb_title>
+		<groupBox1>User Input</groupBox1>
+		<lb_input>Input File:</lb_input>
+		<lb_output>Output File:</lb_output>
+		<groupBox2>Options</groupBox2>
+		<lb_subfield>Subfield Marker</lb_subfield>
+		<rd_simple>Simple Translation</rd_simple>
+		<rd_advanced>Advanced Translation</rd_advanced>
+	</frmSpecial_Formats>
+	<frmSpecific_Options>
+		<title>Advanced Options</title>
+		<lb_title>Options:</lb_title>
+		<lnkLoad>Load Field Mappings</lnkLoad>
+		<ck_indicators>Add Indicators</ck_indicators>
+		<ckLDR>Add LDRs</ckLDR>
+		<ck_subfield>Add Leading Subfield</ck_subfield>
+	</frmSpecific_Options>
+	<frmVURL>
+		<title>Verify URL</title>
+		<groupBox1>Report Options:</groupBox1>
+		<lb_MARC>Input File:</lb_MARC>
+		<lb_Dest>Output File:</lb_Dest>
+		<lb_XSLT>XSLT File:</lb_XSLT>
+		<lbReport>Report Type:</lbReport>
+		<lb_Fields>Fields:</lb_Fields>
+		<lb_MARC_Title>Title:</lb_MARC_Title>
+	</frmVURL>
+	<messages>
+		<general>
+			<title_undefined>Title cannot be left undefined.</title_undefined>
+			<items_processed>{record_number} items were processed.</items_processed>
+		</general>
+		<meEditor>
+			<url_message>Enter URL to catalog.</url_message>
+			<url_title>URL to catalog</url_title>
+		</meEditor>
+		<TCPExport>
+			<host_undefined>Host address cannot be left undefined.</host_undefined>
+			<port_undefined>Port cannot be left undefined.</port_undefined>
+			<port_numeric>Port must be a numeric value.</port_numeric>
+			<file_undefined>Defined file does not appear to exist.  Please verify the file path.</file_undefined>
+			<unable_to_connect>MarcEdit was unable to connect to host:{host_address}.  Please make sure that this address is valid.</unable_to_connect>
+			<connection_lost>Connection was unexpectably lost.  Unable to finish data export.</connection_lost>
+		</TCPExport>
+		<frmSpecial_Formats>
+			<advanced_error>ADVANCED OPTIONS COULD NOT BE COMPLETED DUE TO A PROCESSING ERROR.  SIMPLE TRANSLATION UTILIZED.
+{file_path} has been processed and converted to MARC.  The record has been converted using the following assumptions:
+1) Subfield Markers: {subfield_delimiter}
+2) Data needed to be prepared in a continuous block
+3) That data simply needs to be migrated to MARC, but that all data  manipulation and adding of subfield/indicator data will be done by the user.</advanced_error>
+			<advanced_success>{file_path} has been processed and converted to MARC.  The record was converted using the following assumptions:
+1) Subfield Markers: {subfield_delimiter}
+2) Correct Subfield: {bool_subfield} 
+3) Correct LDR: {bool_ldr}
+4) Correct Indicators: {bool_ind}</advanced_success>
+		</frmSpecial_Formats>
+		<frmVURL>
+			<status_window title="MarcEdit: Processing URLS">Processing File...Please wait.</status_window>
+		</frmVURL>
+	</messages>
+	<inputbox>
+		<title>Random Export</title>
+		<message>What percentage of the file would you like extracted.  \nPlease enter a number. (Example: 10)</message>
+	</inputbox>
+	<frmvalidator>
+		<Title>MARCValidator</Title>
+		<lb_Source>Source File:</lb_Source>
+		<lb_Rules>Rules File:</lb_Rules>
+		<groupBox1>Options</groupBox1>
+		<opt_validate>Validate Record (Default)</opt_validate>
+		<opt_remove>Remove invalid records</opt_remove>
+	</frmvalidator>
+</language>

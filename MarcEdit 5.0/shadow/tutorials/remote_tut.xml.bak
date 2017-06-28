@@ -1,0 +1,18 @@
+<html>
+<body>
+<script type="text/javascript">
+        var xmlDoc=new ActiveXObject("Microsoft.XMLDOM")
+        xmlDoc.async="false"
+        xmlDoc.load("remote_tut.xml")
+        var xslDoc = new ActiveXObject("Microsoft.XMLDOM")
+        xslDoc.async = false
+        xslDoc.load("tut_style.xsl")
+        document.write (xmlDoc.transformNode(xslDoc));
+
+xmlDoc.load("custom_tut.xml")
+        var xslDoc = new ActiveXObject("Microsoft.XMLDOM")
+        xslDoc.async = false
+        xslDoc.load("tut_style.xsl")
+        document.write (xmlDoc.transformNode(xslDoc));
+</script>
+</body></html>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mebatch_db>
+  <config>
+    <batch_current_id>-99</batch_current_id>
+    <current_id>1</current_id>
+    <id>4</id>
+    <title>245</title>
+    <limit>20</limit>
+    <save>
+    </save>
+    <proxy>
+    </proxy>
+    <width>606</width>
+    <height>491</height>
+    <auto_detect>0</auto_detect>
+  </config>
+  <service id="1">
+    <name>Library of Congress</name>
+    <type>Z39.50</type>
+    <host>z3950.loc.gov</host>
+    <port>7090</port>
+    <database>VOYAGER</database>
+    <syntax>USMARC</syntax>
+    <username>
+    </username>
+    <password>
+    </password>
+    <show>yes</show>
+    <search_pause>no</search_pause>
+    <structure>
+    </structure>
+    <timeout>15</timeout>
+  </service>
+  <service id="2">
+    <name>Oregon State University (INNOPAC)</name>
+    <type>Z39.50</type>
+    <host>oasis.orst.edu</host>
+    <port>210</port>
+    <database>INNOPAC</database>
+    <syntax>USMARC</syntax>
+    <username>
+    </username>
+    <password>
+    </password>
+    <show>yes</show>
+    <search_pause>yes</search_pause>
+    <structure>
+    </structure>
+    <timeout>15</timeout>
+  </service>
+  <service id="3">
+    <name>OCLC Cataloging Service</name>
+    <type>Z39.50</type>
+    <host>zcat.oclc.org</host>
+    <port>210</port>
+    <database>OLUCWorldCat</database>
+    <syntax>MARC21</syntax>
+    <username>
+    </username>
+    <password>
+    </password>
+    <timeout>15</timeout>
+    <show>yes</show>
+    <search_pause>no</search_pause>
+    <structure>
+    </structure>
+  </service>
+</mebatch_db>

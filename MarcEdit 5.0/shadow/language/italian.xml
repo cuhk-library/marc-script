@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<id>Italian</id>
+	<global>
+		<menu>
+			<file>&amp;File</file>
+			<exit>&amp;Esci</exit>
+			<tools>S&amp;trumenti</tools>
+			<errorreport>&amp;Suggerimenti/Segnalazione errori</errorreport>
+			<mainwindow>To&amp;rna alla finestra principale</mainwindow>
+			<open>&amp;Apri</open>
+			<save>&amp;Salva</save>
+			<help>A&amp;iuto</help>
+			<contents_help>&amp;Sommario e aiuto</contents_help>
+			<marcbreaker>Marc&amp;Breaker</marcbreaker>
+			<marcmaker>Marc&amp;Maker</marcmaker>
+			<marceditor>Marc&amp;Editor</marceditor>
+			<robertcompare>&amp;RobertCompare</robertcompare>
+			<marcvalidate>&amp;MARCValidate</marcvalidate>
+			<z3950>MarcEdit &amp;Z39.50/SRU Client</z3950>
+		</menu>
+		<tooltip>
+			<open>Apri File</open>
+			<save>Salva File</save>
+			<load>Carica File</load>
+			<export>Esporta registrazioni</export>
+			<help>Aiuto</help>
+		</tooltip>
+		<labels>
+			<subfield>Sottocampo:</subfield>
+			<field>Campo:</field>
+			<about>Informazioni su MarcEdit.NET</about>
+			<source_file>File sorgente:</source_file>
+			<marcbreaker>MarcBreaker</marcbreaker>
+			<marcmaker>MarcMaker</marcmaker>
+			<marceditor>MarcEditor</marceditor>
+			<scriptmaker>MarcEdit Script Maker</scriptmaker>
+			<marctoxml>MARC=&gt;MARC21XML</marctoxml>
+			<xmltomarc>MARC21XML=&gt;MARC</xmltomarc>
+			<field>Campo</field>
+		</labels>
+		<buttons>
+			<process>&amp;Elabora</process>
+			<apply>&amp;Applica</apply>
+			<ok>&amp;OK</ok>
+			<close>&amp;Chiudi</close>
+			<replace>&amp;Sostituisci</replace>
+			<about>&amp;Informazioni su MarcEdit.NET</about>
+			<modify>&amp;Modifica</modify>
+			<default>Default</default>
+		</buttons>
+		<messages>
+			<status_bar>File in corso di elaborazione... Attendere, prego.</status_bar>
+			<processing_complete>Elaborazione completata!</processing_complete>
+			<processing_start>Inizio elaborazione....</processing_start>
+		</messages>
+	</global>
+
+	<Field_Count>
+		<title>Numero di campi</title>
+		<cmenu>
+			<cmenuClipboard>Copia negli appunti</cmenuClipboard>
+			<cmenuSubfields>Numero di sottocampi</cmenuSubfields>
+			<mnuExtract>Estrai registrazioni</mnuExtract>
+		</cmenu>
+		<lb_ReportStyle>Formato del rapporto:</lb_ReportStyle>
+		<opt_tab>Rapporto delimitato da tabulazioni</opt_tab>
+		<opt_xml>Rapporto XML</opt_xml>
+		<opt_html>Rapporto HTML</opt_html>
+		<cmd_Report>&amp;Genera rapporto</cmd_Report>
+	</Field_Count>
+	<FindReplace>
+		<title>Trova/Sostituisci:</title>
+		<lbPreview>Trova solo ricerche dati caricati in modalità anteprima.</lbPreview>
+		<tbFind>Trova</tbFind>
+		<tbReplace>Sostituisci</tbReplace>
+		<lb_FindWhat>Trova quello che:</lb_FindWhat>
+		<cmdFFind>&amp;Trova</cmdFFind>
+		<groupBox1>Opzioni di ricerca:</groupBox1>
+		<ck_f_whole_word>Trova solo parole intere</ck_f_whole_word>
+		<ck_f_match_case>Distingui MAIUSCOLE e minuscole</ck_f_match_case>
+		<lb_ReplaceWith>Sostituisci con:</lb_ReplaceWith>
+		<ck_R_Case>Distingui MAIUSCOLE e minuscole</ck_R_Case>
+		<ck_R_RegExp>Usa espressioni regolari</ck_R_RegExp>
+		<cmd_R_Replace>Sost&amp;ituisci</cmd_R_Replace>
+		<cmd_R_All>Sostituisci &amp;tutto</cmd_R_All>
+	</FindReplace>
+	<frmAbout>
+		<title>Informazioni su MarcEdit 5</title>
+		<lbVersion>Versione:</lbVersion>
+		<lbAuthor>Autore:</lbAuthor>
+		<lbMod>Modificato:</lbMod>
+		<txt_info>MarcEngine è stato concepito per sopportare il formato MARC, indipendentemente dal tipo (es. MARC21, UNIMARC, etc.)  MarcEngine è stato realizzato per supportare lo schema MARCXML sviluppato dalla U.S. Library of Congress. MarcEngine è stato realizzato con un API XML per fornire supporto ad altri schemi XML. MarcEdit Z39.50 Yaz Client impiega Index Data's Yaz Z39.50 library. Per informazioni riguardanti la licenza Index Data, si veda per favore il file d’aiuto MarcEdit, sotto 3rd party software. MarcEdit include Saxon XSLT e il Processore XQuery della Saxonica Limited per XSLT 2.0 support. Informazioni sul Saxon XSLT e sul Processore XQuery della Saxonica Limited license possono essere trovate all’indirizzo: http://www.saxonica.com/documentation/conditions/intro.html.
+		</txt_info>
+		<lbInfo>Ulteriori informazioni:</lbInfo>
+		<lbThanks>Desidero ringraziare le Biblioteche dell'Oregon State University per il loro continuo sostegno al progetto MarcEdit.</lbThanks>
+	</frmAbout>
+	<frmBatchEdit>
+		<title>Strumenti di MarcEdit per la modifica a lotti</title>
+		<navbar>
+			<lnkAddDelete>Aggiungi/cancella campo</lnkAddDelete>
+			<lnkSubfield>Modifica dati sottocampo</lnkSubfield>
+			<lnkIndicators>Modifica indicatori</lnkIndicators>
+			<lnkSwapFields>Scambi campi</lnkSwapFields>
+		</navbar>
+		<globals>
+			<lb_Field>Campo:</lb_Field>
+			<lb_Subfield>Sottocampo:</lb_Subfield>
+			<lb_Position>Posizione:</lb_Position>
+			<lb_FieldData>Dati di campo:</lb_FieldData>
+			<lb_ReplaceWith>Sostituisci con:</lb_ReplaceWith>
+			<lb_Indicator>Indicatori:</lb_Indicator>
+			<lb_SearchOptions>Opzioni di ricerca</lb_SearchOptions>
+			<lb_MatchCase>Distingui MAIUSCOLE e minuscole</lb_MatchCase>
+			<lb_RegEx>Usa espressioni regolari</lb_RegEx>
+		</globals>
+		<lb_A_Title>Funzione aggiungi/cancella campo</lb_A_Title>
+		<ck_dedup>Rimuovi dati duplicati</ck_dedup>
+		<ck_A_Insert>Inserisci prima</ck_A_Insert>
+		<ck_last>Inserisci per ultimo</ck_last>
+		<ck_A_not_present>Aggiungi campo solo se non presente</ck_A_not_present>
+		<cmd_A_Delete>Ca&amp;ncela campo</cmd_A_Delete>
+		<cmd_A_Add>&amp;Aggiungi campo</cmd_A_Add>
+		<lb_Sub_Title>Funzione modifica sottocampo</lb_Sub_Title>
+		<cmd_Sub_Replace>Sost&amp;ituisci testo</cmd_Sub_Replace>
+		<cmd_Sub_Remove>R&amp;imuovi testo</cmd_Sub_Remove>
+		<ck_Sub_New>Solo nuovo sottocampo</ck_Sub_New>
+		<ck_Sub_NotPresent>Aggiungi sottocampo se non c'è</ck_Sub_NotPresent>
+		<lb_Ind_Title>Funzioni modifica indicatore</lb_Ind_Title>
+		<lb_Ind_Replace>Sostituisci indicatori</lb_Ind_Replace>
+		<cmd_I_Replace>Sost&amp;ituisci</cmd_I_Replace>
+		<lb_Swap_Title>Funzione scambi campo</lb_Swap_Title>
+		<ck_Swap_Copy>Copia sorgente</ck_Swap_Copy>
+		<ck_Swap_Add>Aggiungi a campo esistente</ck_Swap_Add>
+		<ck_Swap_Override>Ignora comportamento default</ck_Swap_Override>
+		<cmd_Swap_Process>&amp;Elabora</cmd_Swap_Process>
+		<label20>Dati modificati:</label20>
+	</frmBatchEdit>
+	<frmMain>
+		<title>MarcEdit, di Terry Reese</title>
+		<global>
+		</global>
+		<menu>
+			<mnuFiletools>Strumenti MARC</mnuFiletools>
+			<mnuFileToolsBatch>&amp;Elaborazione a lotti di registrazioni MARC</mnuFileToolsBatch>
+			<mnuTools>&amp;Strumenti</mnuTools>
+			<mnuToolsSelect>Seleziona registrazioni MARC</mnuToolsSelect>
+			<mnuToolsDelete>Ca&amp;ncella registrazioni selezionate</mnuToolsDelete>
+			<mnuToolsExtract>Estrai registrazioni &amp;selezionate</mnuToolsExtract>
+			<mnuToolsTabbed>Esporta registrazioni delimitate da &amp;tabulazioni</mnuToolsTabbed>
+			<mnuToolsGateway>&amp;Esporta registrazioni MARC</mnuToolsGateway>
+			<mnuToolsJoin>MARC&amp;Join</mnuToolsJoin>
+			<mnuToolsSplit>&amp;MARCSplit</mnuToolsSplit>
+			<mnuToolsPreferences>&amp;Preferenze</mnuToolsPreferences>
+			<mnuAddins>Componenti &amp;agg.</mnuAddins>
+			<mnuAddinTranslator>Traduttore di testo &amp;delimitato</mnuAddinTranslator>
+			<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+			<mnuAddinTutorial>Gestore di &amp;guide locali</mnuAddinTutorial>
+			<mnuAddScriptWizard>MarcEdit Script Maker</mnuAddScriptWizard>
+			<mnuAddinURL>&amp;Verifica URL</mnuAddinURL>
+			<mnuHelpList>Iscriversi alla lista di &amp;notifica MarcEdit</mnuHelpList>
+			<mnuBlog>Visualizza il blog di lavoro di Terry</mnuBlog>
+			<mnuAddLang>Modifica dei file di lingua</mnuAddLang>
+		</menu>
+		<navbar>
+			<lnkStart>Pagina iniziale</lnkStart>
+			<lnkTools>Strumenti MARC</lnkTools>
+			<lnkAddin>Componenti aggiuntivi</lnkAddin>
+			<lnkHelp>Aiuto</lnkHelp>
+			<lnkAbout>Informazioni</lnkAbout>
+		</navbar>
+		
+		<label2>Strumenti usati frequentemente:</label2>
+		<startHelp>Aiuto MarcEdit</startHelp>
+		<lbWhatsNew>Cosa c'è di nuovo in MarcEdit 5</lbWhatsNew>
+    <lnkOAIHarvest>Raccolta registrazioni in OAI</lnkOAIHarvest>
+		
+		<lnkpTools>Finestra principale Strumenti MARC</lnkpTools>
+		<lbpTools>Accedi alla finestra principale Strumenti MARC</lbpTools>
+		<lb_pBreaker>MarcBreaker permette agli utenti trasformare dati MARC in un formato mnemonico chiaro.</lb_pBreaker>
+		<lb_pMaker>MarcMaker permette agli utenti compilare nuovamente il formato di file mnemonico di MarcEdit in MARC</lb_pMaker>
+		<lb_pXMLm>Converti dati MARC nel formato MARC21Slim della Library of Congress.</lb_pXMLm>
+		<lb_pEditor>Blocco note integrato di MarcEdit concepito espressamente per modificare registrazioni MARC.</lb_pEditor>
+		<lbMARCSpy>Editor esadecimale di MarcEdit integrato per visualizzare registrazioni MARC schiette.</lbMARCSpy>
+		<lnkMARCSpy>MARCSpy</lnkMARCSpy>
+		
+		<lnkADelimited>Traduttore di testo delimitato</lnkADelimited>
+		<lnkATutorial>Gestore di guide locali</lnkATutorial>
+		<lb_ATutorial>Gestisce tutorial per MarcEdit realizzati comunitariamente o localmente</lb_ATutorial>
+		<lb_ADelimited>Importa dati delimitati nel formato di file mnemonico di MarcEdit.</lb_ADelimited>
+		<lb_AScript>MarcEdit Script Maker è una piccola funzione concepita per aiutare gli utenti a creare vbscript per eseguire funzionalità più avanzate.</lb_AScript>
+		<lnkAURL>Verifica URL</lnkAURL>
+		<lb_AURL>Verifica tutte, molte o alcune URL in un file MARC. Genera rapporti in formato HTML o XML.</lb_AURL>
+		
+		<lnkHIndex>Sommario e indice</lnkHIndex>
+		<lnkHError>Suggerimenti/Segnalazione errori</lnkHError>
+		<lb_HIndex>Apri il sistema d'aiuto di MarcEdit.</lb_HIndex>
+		<lnkHTutorial>Visualizza guide</lnkHTutorial>
+		<lb_HTutorial>Visualizza tutte le guide attualmente associati con MarcEdit.</lb_HTutorial>
+		<lnkHNotify>Iscriversi alla lista di notifica MarcEdit</lnkHNotify>
+		<lb_HNotify>Iscriversi alla lista di notifica MarcEdit per aggiornamenti e informazioni sullo sviluppo di MarcEdit.</lb_HNotify>
+		<lb_HError>Ha qualche commento da fare?  Clicca qui per inviarlo all’autore.</lb_HError>
+		<lb_AboutDesc>Ecco il vero genio dietro MarcEdit.  Ho appena messo il mio nome su di esso :-&gt;  Se desideri scoprire un po 'di più su di me e la mia famiglia, clicca qui:</lb_AboutDesc>
+    <lb_Authors>Informazioni sugli autori:</lb_Authors>
+    <lb_z3950>Z39.50/SRU Client</lb_z3950>
+    <lb_zAbout>Accesso di MarcEdit integrato nel Z39.50/SRU client per raccogliere dati da server remoti.</lb_zAbout>
+			
+	</frmMain>	
+	
+	<frmOptions>
+		<title>Proprietà MarcEdit</title>
+		<tabFile>File</tabFile>
+		<tabExport>Esporta</tabExport>
+		<tabEditor>MarcEditor</tabEditor>
+		<tabEngine>MARCEngine</tabEngine>
+		<tabLang>Lingua</tabLang>
+		<lb_Diacritics>Diacritici:</lb_Diacritics>
+		<lb_xslt_engine>Motore XSLT:</lb_xslt_engine>
+		<ck_Diacritics>Impiega diacritici quando trasformi</ck_Diacritics>
+		<lb_SetFileOptions>Imposta opzioni di file:</lb_SetFileOptions>
+		<ckmrc>Associa file (*.mrc) con MarcBreaker</ckmrc>
+		<ckmrk>Associa file (*.mrk*) con MarcEditor</ckmrk>
+		<ckexport>Aggiungi opzione di esportazione al menu contestuale</ckexport>
+		<ckpreview>Aggiungi opzioni di anteprima al menu contestuale</ckpreview>
+		<!--I seguenti due item sono usati nel programma nel seguente modo:
+		     Associa il tipo di file (*[estensione di file] con: -->
+		<lb_title>Tag di titolo:</lb_title>
+		<lb_FileAssociate_1>Associa il tipo di file (*</lb_FileAssociate_1>
+		<lb_FileAssociate_2>) con:</lb_FileAssociate_2>
+		<cmd_tEdit>Modifica tipo</cmd_tEdit>
+		<lb_TCPIP_Props>Proprietà TCP/IP:</lb_TCPIP_Props>
+		<lb_TCP_Host>Indirizzo host:</lb_TCP_Host>
+		<lb_TCP_Port>Porta:</lb_TCP_Port>
+		<lb_TCP_Timeout>Temporizzazione:</lb_TCP_Timeout>
+		<ck_export_output>Ricevuta esportazioni (cattura uscita ILS)</ck_export_output>
+		<lb_Serial_Settings>Impostazioni stampante/Novell:</lb_Serial_Settings>
+		<lb_Serial_Printer_Name>Nome stampante:</lb_Serial_Printer_Name>
+		<lb_Editor_Template>Imposta modello MarcEditor:</lb_Editor_Template>
+		<lb_Current_Template>Modello corrente:</lb_Current_Template>
+		<cmd_editor_set_font>&amp;Carattere</cmd_editor_set_font>
+		<lb_Editor_Font_Props>Imposta le proprietà dei tipi di carattere di MarcEditor:</lb_Editor_Font_Props>
+		<lb_Engine_Diacritics>Diacritici:</lb_Engine_Diacritics>
+		<ck_engine_diacritics>Impiega diacritici quando trasformi (MARC-8)</ck_engine_diacritics>
+		<ck_engine_mnemonics>Visualizzazione mnemonica (anche se Unicode)</ck_engine_mnemonics>
+		<lb_Engine_XML_Options>Opzioni XML:</lb_Engine_XML_Options>
+		<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+		<lb_engine_namespace>Impiega namespace</lb_engine_namespace>
+		<lb_lang_font>Imposta tipo di carattere per la lingua:</lb_lang_font>
+		<lb_Set_Lang>Imposta pacchetto di lingua:</lb_Set_Lang>
+		<ckUsePreview>Impiega modalità anteprima</ckUsePreview>
+		<lb_psize>Dimensione anteprima:</lb_psize>
+		<lb_Author>Tag d'autore:</lb_Author>
+		<ck_append>Aggiungi nuove registrazioni</ck_append>
+		<ck_nwindow>Apri file in una nuova finestra</ck_nwindow>
+	</frmOptions>
+	
+	<frmSelectMARCRecords>
+		<title>MarcEdit.NET: Modifica registrazioni MARC selezionate</title>
+		<columnHeader1>Numero registrazione</columnHeader1>
+		<columnHeader2>Visualizza campo</columnHeader2>
+		<cmdImport>Importa file</cmdImport>
+		<cmdfDelete>Cancella selezionati</cmdfDelete>
+		<cmdfDeleteR>Seleziona random</cmdfDeleteR>
+		<cmdfRandom>Seleziona random</cmdfRandom>
+		<cmdExport>Esporta selezionati</cmdExport>
+		<lb_Search>Cerca:</lb_Search>
+		<lb_DisplayField>Visualizza campo:</lb_DisplayField>
+		<lb_SourceFile>File MARC sorgente:</lb_SourceFile>
+		<ck_retain>Ritieni item selezionati</ck_retain>
+		<ckSource>Salva registrazioni modificate in sorgente</ckSource>
+	</frmSelectMARCRecords>
+	
+	<frmTools>
+		<title>Strumenti MARC</title>
+		<menu>
+			<mnuToolsXML>&amp;Modifica lista delle funzioni XML</mnuToolsXML>
+			<mnuToolsEncoding>Strumenti per la conversione dei caratteri</mnuToolsEncoding>
+			<mnuToolsUTF8>Conversione MARC-8-&gt;UTF8</mnuToolsUTF8>
+			<mnuToolsMARC8>Conversione UTF8-&gt;MARC-8</mnuToolsMARC8>
+			<mnuToolsLC>&amp;Normalizza formato LC MARCMakr</mnuToolsLC>
+			<mnuToolsExport>&amp;Esporta registrazioni MARC</mnuToolsExport>
+			<mnuToolsExtract>Estrai registrazioni MARC &amp;selezionate</mnuToolsExtract>
+		</menu>
+		<groupBox1>File:</groupBox1>
+		<lb_InputFile>File di input:</lb_InputFile>
+		<lb_OutputFile>File di output:</lb_OutputFile>
+		<groupBox2>Funzioni MARC</groupBox2>
+		<ck_UTF8>Conv. in Utf8 da Marc8</ck_UTF8>
+		<ck_Marc8>Conv. in Marc8 da Utf8</ck_Marc8>
+		<groupBox3>Conversioni XML</groupBox3>
+		<lb_Results>Risultati:</lb_Results>
+		<cmdExecute>&amp;Esegui</cmdExecute>
+		<cmdEdit>&amp;Modifica registrazioni</cmdEdit>	
+		<mnuBatch>Elaborazione a &amp;lotti registrazioni MARC</mnuBatch>
+	</frmTools>
+	
+	<frmUtilities>
+		<title>Dialogo funzioni</title>
+		<navbar>
+			<lnkExport>Esporta registrazioni tab-delimited</lnkExport>
+			<lnklnkMARC8toUTF8>MARC-8-&gt;UTF8</lnklnkMARC8toUTF8>
+			<lnkUTF8toMARC8>UTF8-&gt;MARC-8</lnkUTF8toMARC8>
+			<lnkSplit>MARCSplit</lnkSplit>
+			<lnkJoin>MARCJoin</lnkJoin>
+			<!--Rest of the items on the navbar are utility names,  probably shouldn't be translated-->
+		</navbar>
+		<ck_normalize_tip>Quando selezionati i dati del campo saranno normalizzati rimuovendo marcatori di sottocampo e indicatore dati.</ck_normalize_tip>
+		<ck_normalize>Normalizzi dati di campo</ck_normalize>
+		<mnuLoad>Carica impostazioni</mnuLoad>
+		<mnusave>Salva impostazioni</mnusave>
+		<lb_Tab_Header>Esporta registrazioni tab-delimited</lb_Tab_Header>
+		<cmdTExport>&amp;Esporta</cmdTExport>
+		<cmdTAdd>&amp;Aggiungi campo</cmdTAdd>
+		<cmdTDelete>Ca&amp;ncella campo</cmdTDelete>
+		<ckTMarc>MARC</ckTMarc>
+		<lb_Join_Header>Funzione MARCJoin</lb_Join_Header>
+		<lb_Join_Files>File da unire:</lb_Join_Files>
+		<lb_Split_Header>Funzione MARCSplit</lb_Split_Header>
+		<lb_Split_Folder>Cartella destinazione:</lb_Split_Folder>
+		<lb_Split_Records># di registazioni:</lb_Split_Records>
+		<lb_UTF8_Header>Conversione caratteri</lb_UTF8_Header>
+		<lb_MARC8_Header>UTF-8 a MARC-8</lb_MARC8_Header>
+		<lb_UTF8_Dest>File destinazione:</lb_UTF8_Dest>
+		<lb_encoding>Codifica di origine:</lb_encoding>
+		<lb_BSource>Directory sorgente:</lb_BSource>
+		<lb_Extensions>Tipi di file:</lb_Extensions>
+		<lbBTitle>Elaborazione a lotti registrazioni MARC</lbBTitle>
+	</frmUtilities>
+	
+	<TCPExport>
+		<title>Esporta registrazioni</title>
+		<global>
+			<send>&amp;Invia</send>
+			<host>Indirizzo host:</host>
+			<tranfer>Trasferisci file:</tranfer>
+		</global>
+		<tbExport>TCP/IP</tbExport>
+		<tbPrint>Novell/LTP</tbPrint>
+		<lb_TCP_Port>Porta:</lb_TCP_Port>
+		<lb_Serial_Printer_Name>Nome stampante:</lb_Serial_Printer_Name>
+	</TCPExport>
+	
+	<xml_console>
+		<title>Modifica funzioni XML</title>
+		<lb_Defined_Functions>Funzioni definite:</lb_Defined_Functions>
+		<cmd_Add>&amp;Aggiungi</cmd_Add>
+		<cmdDelete>Ca&amp;ncella</cmdDelete>
+	</xml_console>
+	
+	<xml_functions>
+		<global>
+			<marc>MARC</marc>
+			<marcxml>MARCXML</marcxml>
+			<other>Altro</other>
+		</global>
+		<title>Modifica funzioni XML</title>
+		<lb_GenInfo>Informazioni generali:</lb_GenInfo>
+		<lb_Alias>Nome funzione (Alias):</lb_Alias>
+		<lb_XSLTPath>Percorso ai fogli stile XSLT:</lb_XSLTPath>
+		<lb_FormatInfo>Informazioni sul formato:</lb_FormatInfo>
+		<lb_Origin>Formato di origine:</lb_Origin>
+		<lb_Final>Formato finale:</lb_Final>
+		<ck_Marc8>Converti in MARC8</ck_Marc8>
+		<ck_Remote>Risolvi entità remote</ck_Remote>
+	</xml_functions>
+	
+	<meEditor>
+		<title>MarcEditor</title>
+		<global>
+			<authority>Autorità</authority>
+			<authorityname>Nome</authorityname>
+			<authoritysubject>Soggetto</authoritysubject>
+			<book>Libro</book>
+			<serial>Seriale</serial>
+			<visualmaterial>Materiale visivo</visualmaterial>
+			<maps>Risorsa cartografica</maps>
+			<sound>Audioregistrazione</sound>
+			<score>Partitura</score>
+			<electronic>Risorsa elettronica</electronic>
+			<mixedmedia>Materiale misto</mixedmedia>
+		</global>
+		<menu>
+			<mnuFileNewWindow>Apri nuova finestra</mnuFileNewWindow>
+			<mnuFileNew>&amp;Nuovo</mnuFileNew>
+			<mnuFileNewDefault>Default</mnuFileNewDefault>
+			<mnuFileClose>Chiudi</mnuFileClose>
+			<mnuFileRecent>File re&amp;centi</mnuFileRecent>
+			<mnuFileNone>Nessuno</mnuFileNone>
+			<mnuFileSaveAs>Salva come</mnuFileSaveAs>
+      <mnuFileRecent>File re&amp;centi</mnuFileRecent>
+      <mnuFileClearList>Pulisci file recenti</mnuFileClearList>
+			<mnuFilePrintPreview>&amp;Anteprima di stampa</mnuFilePrintPreview>
+			<mnuFilePrint>&amp;Stampa</mnuFilePrint>
+			<mnuFileCompile>Comp&amp;ila file in MARC</mnuFileCompile>
+			<mnuEdit>&amp;Modifica</mnuEdit>
+			<mnuEditUndo>&amp;Annulla</mnuEditUndo>
+			<mnuEditRedo>Ri&amp;peti</mnuEditRedo>
+			<mnuEditSpecialUndo>A&amp;nnulla speciale</mnuEditSpecialUndo>
+			<mnuEditCut>Ta&amp;glia</mnuEditCut>
+			<mnuEditCopy>&amp;Copia</mnuEditCopy>
+			<mnuEditPaste>&amp;Incolla</mnuEditPaste>
+			<mnuEditClear>Pu&amp;lisci</mnuEditClear>
+			<mnuEditFind>&amp;Trova</mnuEditFind>
+			<mnuEditReplace>Sost&amp;ituisci</mnuEditReplace>
+			<mnuEditJumpTo>&amp;Salta a...</mnuEditJumpTo>
+			<mnuEdit008>Inserisci 00&amp;8</mnuEdit008>
+			<mnuEditALA>Set di caratteri A&amp;LA MARC-8</mnuEditALA>
+			<mnuEditSpelling>&amp;Controllo ortografico</mnuEditSpelling>
+			<mnuEditSelectAll>&amp;Seleziona tutto</mnuEditSelectAll>
+			<mnuEditWrap>A capo automatico</mnuEditWrap>
+			<mnuEditInfo>Informazioni &amp;MARC</mnuEditInfo>
+			<mnuEditInfoOCLC>Aiuto MARC OCLC MARC</mnuEditInfoOCLC>
+			<mnuEditInfoLC>Aiuto MARC Library of Congress</mnuEditInfoLC>
+			<mnuFont>&amp;Carattere</mnuFont>
+			<mnuFontFont>&amp;Carattere...</mnuFontFont>
+			<mnuFontColor>Co&amp;lore...</mnuFontColor>
+			<mnuToolsLC>&amp;Normalizza registrazione LC</mnuToolsLC>
+			<mnuToolsAdd>&amp;Aggiungi/cancella campo</mnuToolsAdd>
+			<mnuToolsIndicator>Modifica dati &amp;indicatore</mnuToolsIndicator>
+			<mnuToolsSubfield>Modifica dati &amp;sottocampo</mnuToolsSubfield>
+			<mnuToolsSort>&amp;Ordina campi</mnuToolsSort>
+			<mnuToolsSwap>Scam&amp;bi dati campo</mnuToolsSwap>
+			<mnuToolsOptions>Op&amp;zioni</mnuToolsOptions>
+			<mnuToolsMacros>Macro assegnati</mnuToolsMacros>
+			<mnuToolsCMacros>Gestisci macro</mnuToolsCMacros>
+			<mnutoolsurl>&amp;Genera MARC di URL</mnutoolsurl>
+                        <mnuToolsOAI>&amp;Raccoglie OAI</mnuToolsOAI>
+                        <mnuToolsControl>Genera numeri di &amp;controllo</mnuToolsControl>
+			<mnuToolsSortby>Ordina per...</mnuToolsSortby>
+			<mnuToolsSortbyTitle>Ordina per titolo</mnuToolsSortbyTitle>
+			<mnuToolsSortAuthor>Ordina per autore</mnuToolsSortAuthor>
+      <mnuToolsValidate>Convalida registrazioni MARC</mnuToolsValidate>
+			<mnuEditControl>Inserisci numero di controllo</mnuEditControl>
+			<mnuView>&amp;Visualizza</mnuView>
+			<mnuViewToolbar>&amp;Barra degli strumenti</mnuViewToolbar>
+			<mnuViewStatus>Barra di &amp;stato</mnuViewStatus>
+			<mnuReports>&amp;Rapporti</mnuReports>
+			<mnuReportsField>&amp;Numero di campi</mnuReportsField>
+			<mnuReportsRobert>&amp;RobertCompare</mnuReportsRobert>
+			<mnuReportsValidate>&amp;MARCValidate</mnuReportsValidate>
+		</menu>
+		<tooltip>
+			<tbPrint>Stampa file</tbPrint>
+			<tbCompile>Compila file corrente</tbCompile>
+			<tbCut>Taglia</tbCut>
+			<tbCopy>Copia</tbCopy>
+			<tbALA>Set di caratteri ALA MARC-8</tbALA>
+			<tbDelete>Cancella</tbDelete>
+			<tbFind>Trova</tbFind>
+			<tbZ39_50>MarcEdit Z39.50 Client</tbZ39_50>
+		</tooltip>
+		<lb_bytes>Sono stati caricari {loaded_bytes} byte di {file_bytes}.</lb_bytes>
+		<lnkLoadAll>Carica intero file</lnkLoadAll>
+		<jumpmessage>Salta alla registrazione:</jumpmessage>
+		<jumptitle>Salta a...</jumptitle>
+	</meEditor>
+	
+	<frmOAIHarvest>
+		<title>Raccolta metadati</title>
+		<lbTitle>Raccolta in OAI a MARC</lbTitle>
+		<lbServer>Indirizzo server:</lbServer>
+		<lbSet>Nome set:</lbSet>
+		<lbMetadata>Tipo metadati:</lbMetadata>
+		<lbCrosswalk>Percorso passaggio:</lbCrosswalk>
+		<lbGetRecord>GetRecord:</lbGetRecord>
+	</frmOAIHarvest>
+	
+	<frmMacroManager>
+		<title>Gestore MarcEditor di macro</title>
+		<lbMacro>Macro:</lbMacro>
+		<lbActions>Azioni:</lbActions>
+		<lnkNew>Crea nuova macro</lnkNew>
+		<lnkDelete>Cancella macro selezionata</lnkDelete>
+		<lnkEdit>Modifica macro selezionata</lnkEdit>
+		<lnkKey>Assegnazione tasto</lnkKey>
+	</frmMacroManager>
+	
+	<frmConstantData>
+		<title>Modifica dati costanti</title>
+		<lbMacro>Dati costanti:</lbMacro>
+		<lbActions>Azioni:</lbActions>
+		<lnkNew>Crea nuova stringa</lnkNew>
+		<lnkDelete>Cancella stringa selezionata</lnkDelete>
+		<lnkEdit>Modifica stringa selezionata</lnkEdit>
+		<lnkKey>Assegnazione tasto</lnkKey>
+	</frmConstantData>
+	
+	<frmScript>
+		<title>Modifica script</title>
+	</frmScript>
+	
+	<frmCatalogCalculator>
+		<title>Calcolatore di catalogazione, di Kyle Banerjee</title>
+		<lbSearch>Trova:</lbSearch>
+		<lbResults>Risultati:</lbResults>
+		<lnkCatalog>Calcolatore di catalogazione di Kyle Banerjee</lnkCatalog>
+	</frmCatalogCalculator>
+	
+	<frmTutorialManager>
+		<title>Gestore di guide locali</title>
+		<lbAdd>Aggiungi guide</lbAdd>
+		<lbTitle>Titolo:</lbTitle>
+		<lbDescription>Descrizione:</lbDescription>
+		<lburl>URL:</lburl>
+		<lbModified>Modificata:</lbModified>
+		<lbTutorial>Guide:</lbTutorial>
+		<lnkAdd>Aggiungi/Modifica</lnkAdd>
+		<lnkDelete>Cancella</lnkDelete>
+	</frmTutorialManager>
+	
+	<frmSpecial_Formats>
+		<title>Traduzione CDS-ISIS .iso =&gt; MARC</title>
+		<lb_title>Traduzione CDS-ISIS =&gt; MARC</lb_title>
+		<groupBox1>Input utente</groupBox1>
+		<lb_input>File di input:</lb_input>
+		<lb_output>File di output:</lb_output>
+		<groupBox2>Opzioni</groupBox2>
+		<lb_subfield>Marcatore di sottocampo</lb_subfield>
+		<rd_simple>Traduzione semplice</rd_simple>
+		<rd_advanced>Traduzione avanzata</rd_advanced>
+	</frmSpecial_Formats>
+	
+	<frmSpecific_Options>
+		<title>Opzioni avanzate</title>
+		<lb_title>Opzioni:</lb_title>
+		<lnkLoad>Carica mappature del campo</lnkLoad>
+		<ck_indicators>Aggiungi indicatori</ck_indicators>
+		<ckLDR>Aggiungi LDR</ckLDR>
+		<ck_subfield>Aggiungi primo sottocampo</ck_subfield>
+	</frmSpecific_Options>
+	
+	<frmVURL>
+		<title>Verifica URL</title>
+		<groupBox1>Opzioni di rapporto:</groupBox1>
+		<lb_MARC>File di input:</lb_MARC>
+		<lb_Dest>File di output:</lb_Dest>
+		<lb_XSLT>File XSLT:</lb_XSLT>
+		<lbReport>Tipo rapporto:</lbReport>
+		<lb_Fields>Campi:</lb_Fields>
+		<lb_MARC_Title>Titolo:</lb_MARC_Title>
+	</frmVURL>
+	
+	<messages>
+		<general>
+			<header>MarcEdit.NET</header>
+			<equal_filenames>Il file sorgente/di input non può essere uguale al file di destinazione/di output.</equal_filenames>
+			<nofile>Il file sorgente/di input non sembra esistere.</nofile>
+			<text_not_found>Il testo non è stato trovato.</text_not_found>
+			<source_undefined>Il file sorgente/di input non può essere lasciato vuoto.</source_undefined>
+			<output_undefined>Il file di destinazione/di output non può essere lasciato vuoto.</output_undefined>
+			<alias_undefined>L'alias non può essere lasciato vuoto.</alias_undefined>
+			<xslt_undefined>Il percorso ai XSLT non può essere lasciato vuoto.</xslt_undefined>
+			<field_undefined>Il campo non può essere lasciato vuoto.</field_undefined>
+			<title_undefined>Il titolo non può essere lasciato vuoto.</title_undefined>
+			<fielddata_undefined>I dati di campo non possono essere lasciati vuoti.</fielddata_undefined>
+			<subfield_undefined>Il sottocampo non può essere lasciato vuoto.</subfield_undefined>
+			<item_undefined>L’operazione non può essere completata. Non è stato selezionato un item.</item_undefined>
+			<fields_added>Sono stati aggiunti {record_number} campi.</fields_added>
+			<fields_deleted>Sono stati cancellati {record_number} campi.</fields_deleted>
+			<fields_selected>Sono state selezionate {record_number} registrazioni.</fields_selected>
+			<records_deleted>Le registrazioni selezionate sono state cancellate.</records_deleted>
+			<records_extracted>Le registrazioni selezionate sono state estratte.</records_extracted>
+			<export_items_success>Gli item sono stati esportati in {file_path}</export_items_success>
+			<changes_made>{record_number} modifiche sono state fatte.</changes_made>
+			<items_processed>{record_number} item sono stati elaborati.</items_processed>
+			<no_changes>Non sono state fatte modifiche.</no_changes>
+			<challenge_continue>Sei sicuro di volere continuare?</challenge_continue>
+			<challenge_file_has_changed>Il file è stato modificato. Vuoi salvare le modifiche?</challenge_file_has_changed>
+			<undefined_error>Errore non definito. Se l’errore permane, contatta l’autore includendo le fasi necessarie per ricreare il problema.</undefined_error>
+			<undefined_processing_error>Errore non definito di elaborazione. L’operazione non può essere completata.</undefined_processing_error>
+			<valid_marc_error>Errore non definito. Assicurati che questo file MARC sia valido.</valid_marc_error>
+			<selected_error>L'azione richiesta non può essere completata. Non è stato selezionato alcun item.</selected_error>
+			<temp_file_error>L’operazione non può essere completata. L’applicazione non può generare i file temporanei necessari.</temp_file_error>
+			<internal_error>Errore interno: {error_number}. L'operazione non può essere completata.</internal_error>
+			<file_not_found_error>{file_path} non può essere trovato.</file_not_found_error>
+			<general_exception_error>Messaggio dell'eccezione: {exception_message}{newline}Sorgente dell'eccezione: {exception_source}</general_exception_error>
+			<general_error>Numero di errore: {error_number}{newline}Messaggio di errore: {error_message}{newline}Numero di linea: {line_number}</general_error>	
+			<preview_load>Sono stati caricati {loaded_bytes} di {file_bytes}.</preview_load>
+		</general>
+		<Field_Cound>
+			<status_window title="MarcEdit: Generating Report">Generazione di rapporto in corso ... Attendere, prego</status_window>
+		</Field_Cound>
+		<frmSelectMARCRecords>
+			<!--Data between the {} will be replaced at runtime, do not edit {} text-->
+			<status_bar>Elaborazione della registrazione {record_number}</status_bar>
+		</frmSelectMARCRecords>
+		<frmTools>
+		    <!--Data between {} will be replaced at runtime, do not edit -->
+			<txt_Results_Error>Numero di errore: {error_number}</txt_Results_Error>
+			<!--Data between the {} will be replaced at runtime-->
+			<txt_Results_Success>{recs_processed} registrazioni sono state elaborate in {nnn} secondi.</txt_Results_Success>
+			<!--Data between the {} will be replaced at runtime-->
+			<txt_Results_Transform>Le registrazioni sono state trasformate in {nnn} secondi.</txt_Results_Transform>
+		</frmTools>
+		<frmUtilities>
+			<uft8_status_success>{file_path} è stato convertito nel set di caratteri UTF-8 e salvato in {dest_path}.</uft8_status_success>
+			<lbCaption_Prepare>File in preparazione per conversione caratteri...</lbCaption_Prepare>
+			<lbCaption_ReBuild>Dati MARC in ricostruzione…</lbCaption_ReBuild>
+			<lbCaption_Success>{record_number} registrazioni sono state elaborate in {newline}{nnn} secondi.</lbCaption_Success>
+			<lbJoinStatus>I file sono stati unificati in {file_path}</lbJoinStatus>
+			<txtSplitProgress_Success>{record_number} file sono stati generati.</txtSplitProgress_Success>
+			<status_message>Registrazioni in elaborazione...</status_message>
+			<lb_status>I file sono stati elaborati e salvati in {file_path}</lb_status>
+      <lb_final>Codifica finale:</lb_final>
+		</frmUtilities>
+		<meEditor>
+			<title_loading>MarcEdit: Caricamento file</title_loading>
+			<status_window>Caricamento file... Attendere, prego.</status_window>
+			<save_window>Salvataggio file... Attendere, prego.</save_window>
+			<save_loading>MarcEdit: Salvataggio file</save_loading>
+			<status_bar_open>{file_path} caricato in {nnn} secondi.</status_bar_open>
+			<status_bar_save>{file_path} salvato in {nnn} secondi.</status_bar_save>
+			<xml_load_undefined>Impossibile caricare.  Questo tipo di file XML non è definito.</xml_load_undefined>
+			<url_message>Inserisci URL del catalogo.</url_message>
+			<url_title>URL del catalogo</url_title>
+			<locked>Il riquadro di anteprima è bloccato.</locked>
+			<unlocked>Il riquadro di anteprima non è bloccato.</unlocked>
+		</meEditor>
+		<TCPExport>
+			<host_undefined>L’indirizzo host non può essere lasciato vuoto.</host_undefined>
+			<port_undefined>La porta non può essere lasciata vuota.</port_undefined>
+			<port_numeric>La porta dev’essere un valore numerico.</port_numeric>
+			<file_undefined>Il file definito non sembra esistere. Prego, verificare il percorso del file.</file_undefined>
+			<unable_to_connect>MarcEdit non è in grado di connettersi all’host:{host_address}. Assicurati che questo indirizzo sia valido.</unable_to_connect>
+			<connection_lost>La connessione è stata persa in modo inaspettato. Impossibile finire l'esportazione dei dati.</connection_lost>
+		</TCPExport>
+		<frmSpecial_Formats>
+			<advanced_error>
+LE OPZIONI AVANZATE NON POSSONO ESSERE COMPLETATE PER UN ERRORE DI ELABORAZIONE. LA TRADUZIONE SEMPLICE È STATA UTILIZZATA.
+{file_path} è stato elaborato e convertito in MARC. La registrazione è stata convertita utilizzando i presupposti seguenti:
+1) Marcatori di sottocampo: {subfield_delimiter}
+2) I dati devono essere preparati in un blocco continuo
+3) I dati devono semplicemente essere migrati in MARC, ma tutta la manipolazione dei dati e l’aggiunta dei dati di sottocampo/indicatore devono essere fatte dall’utente.
+			</advanced_error>
+			<advanced_success>
+{file_path} è stato elaborato e convertito in MARC. La registrazione è stata convertita utilizzando i presupposti seguenti:
+1) Marcatori di sottocampo: {subfield_delimiter}
+2) Sottocampo corretto: {bool_subfield} 
+3) LDR corretta: {bool_ldr}
+4) Indicatori corretti: {bool_ind}
+			</advanced_success>
+		</frmSpecial_Formats>
+		<frmVURL>
+			<status_window title="MarcEdit: Processing URLS">Elaborazione file... Attendere, prego.</status_window>
+		</frmVURL>
+	</messages>
+	
+	<me_tabbed>
+			<label>
+        <joinItemsToolStripMenuItem>Unisci item</joinItemsToolStripMenuItem>
+        <deleteItemsToolStripMenuItem>Cancella item</deleteItemsToolStripMenuItem>
+				<header>Esporta registrazioni delimitate da tabulazioni</header>
+				<output>File di output:</output>
+				<input>File di input:</input>
+				<arguments>Argomenti</arguments>
+				<cdata>Dati costanti</cdata>
+				<punctuation>Punteggiatura finale:</punctuation>
+				<indicator>Indicatori:</indicator>
+				<map_to>Mappa in:</map_to>
+				<select>Seleziona:</select>
+				<version>Versione:</version>
+				<qualifier>Qualificatore testo</qualifier>
+				<enter_character>Inserisci carattere</enter_character>
+				<delimiter>Delimitatore</delimiter>
+				<summary>Il traduttore di testo delimitato MarcEdit fornisce un metodo rapido e facile per convertire file di testo delimitato in MARC. La funzione permette agli utenti di definire campi MARC e indicatori per campi individuali e crea automaticamente un 008 minimo per le vostre registrazioni MARC. Tuttavia bisogna sapere che questa funzione solo fornisce un metodo per convertire dati delimitati in MARC. Questa funzione non convalida i campi creati.</summary>
+				<finished_summary>"Il traduttore di testo delimitato di MarcEdit ha creato con successo un file di testo MARC in: {file_path}. Questo file può essere visualizzato/modificato con MarcEditor se è richiesta una ulteriore manipolazione. Per tradurre questo file in MARC schietto, occorre “rifare” questo file utilizzando MarcMaker.”;</finished_summary>
+				<ck_sort>Ordina campi</ck_sort>
+				<ck_unicode>Codifica UTF-8</ck_unicode>
+			</label>
+			<button>
+				<cancel>Cancella</cancel>
+				<next>Segue</next>
+				<finish>Termina</finish>
+				<save_template>Salva modello</save_template>
+				<load_template>Carica modello</load_template>
+				<apply>Applica</apply>
+			</button>
+			<messages>
+				<no_save>Il file del modello non può essere scritto… Esci.</no_save>
+				<not_compatible>Il formato del file non sembra essere compatibile con questa funzione. Vuoi comunque continuare?</not_compatible>
+				<map_to_undefined>Il mappa di campo non può essere lasciato vuoto.</map_to_undefined>
+				<subfield_undefined>I campi MARC superiori a 10 devono definire un codice di sottocampo.</subfield_undefined>
+				<needs_numeric>I dati del campo devono essere numerici. Esempio: 040$a</needs_numeric>
+			</messages>
+	</me_tabbed>
+	<inputbox>
+		<title>Esporta random</title>
+		<message>Quale percentuale del file desideri estrarre.  \nIndicare un numero, prego. (Esempio: 10)</message>
+	</inputbox>
+	<frmvalidator>
+		<title>MARCValidator</title>
+		<lb_Source>File sorgente:</lb_Source>
+		<lb_Rules>Regole di file:</lb_Rules>
+		<groupBox1>Opzioni</groupBox1>
+		<opt_validate>Convalida registrazione (Default)</opt_validate>
+		<opt_remove>Rimuovi registrazioni non valide</opt_remove>
+		<optIdentify>Identifica registrazioni non valide</optIdentify>
+	</frmvalidator>
+	<frmHex>
+		<title>MARCSpy</title>
+		<global>
+			<bytes>Byte</bytes>
+			<position>Posizione</position>
+			<text>Testo</text>
+		</global>
+		<findmessage>Trova testo:</findmessage>
+		<findtitle>Trova</findtitle>
+	
+	</frmHex>
+	<frmControlNumb>
+		<title>Genera numeri di controllo</title>
+		<lb_prefix>Prefisso del numero:</lb_prefix>
+		<lb_digit>Numero iniziale:</lb_digit>
+		<ck_autogenerate>Inserisci in nuove registrazioni</ck_autogenerate>
+		<lb_length>Lunghezza numero (senza prefisso)</lb_length>
+	</frmControlNumb>
+	<frmXMLTreeView>
+		<title>Editor MarcEdit di file di lingua</title>
+		<lb_file>Seleziona file:</lb_file>
+		<ck_backup>Ripristina da backup</ck_backup>
+	</frmXMLTreeView>
+	<frmSort>
+		<title>Wizard di ordinamento personalizzato</title>
+		<lb_title>Seleziona campi da escludere ordinamento</lb_title>
+		<lb_fields>Campi ordinati:</lb_fields>
+		<lbExclude>Escludi campi:</lbExclude>
+		<mnuToolsCustomSort>Ordinamento personalizzato</mnuToolsCustomSort>
+	</frmSort>
+</language>

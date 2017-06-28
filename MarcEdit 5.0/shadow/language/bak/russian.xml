@@ -1,0 +1,460 @@
+<?xml version="1.0" ?>
+<language>
+	<global>
+		<menu>
+			<file>&amp;Файл</file>
+			<exit>&amp;Выход</exit>
+			<tools>&amp;Инструменты</tools>
+			<errorreport>&amp;Предоложение/Отправить отчёт ощибок</errorreport>
+			<mainwindow>&amp;Возврать в главное окно</mainwindow>
+			<open>&amp;Открыть</open>
+			<save>&amp;Сохранить</save>
+			<help>&amp;Справка</help>
+			<contents_help>&amp;Содержание и справка</contents_help>
+			<marcbreaker>MARCна&amp;текст</marcbreaker>
+			<marcmaker>Текстна&amp;MARC</marcmaker>
+			<marceditor>MARC&amp;редактор</marceditor>
+			<robertcompare>&amp;MARCсравнение</robertcompare>
+			<marcvalidate>&amp;MARCпроверка</marcvalidate>
+			<z3950>Клиент &amp;Z39.50 MarcEdit</z3950>
+		</menu>
+		<tooltip>
+			<open>Открыть файл</open>
+			<save>Сохранить файл</save>
+			<export>Экспортировать записи</export>
+			<help>Справка</help>
+		</tooltip>
+		<labels>
+			<subfield>Подполе:</subfield>
+			<field>Поле:</field>
+			<about>О MarcEdit.NET</about>
+			<source_file>Исходный файл:</source_file>
+			<marcbreaker>MARCнатекст</marcbreaker>
+			<marcmaker>ТекстнаMARC</marcmaker>
+			<marceditor>MARCредактор </marceditor>
+			<scriptmaker>MarcEdit скрипт сочинитель</scriptmaker>
+			<marctoxml>MARC=&gt;MARC21XML</marctoxml>
+			<xmltomarc>MARC21XML=&gt;MARC</xmltomarc>
+		</labels>
+		<buttons>
+			<process>&amp;Выполнить процесс</process>
+			<apply>&amp;Применить</apply>
+			<ok>&amp;OK</ok>
+			<close>&amp;Закрыть</close>
+			<replace>&amp;Заменить</replace>
+			<about>О &amp;MarcEdit.NET</about>
+			<modify>&amp;Изменить</modify>
+			<default>Установки по умолчанию</default>
+		</buttons>
+		<messages>
+			<status_bar>Перевожу файл...Ожидайте пожалуйста.</status_bar>
+			<processing_complete>Закончен перевод файла!</processing_complete>
+			<processing_start>Перевод файла начинает....</processing_start>
+		</messages>
+	</global>
+	<Field_Count>
+		<title>Число полей</title>
+		<cmenu>
+			<cmenuClipboard>Копировать в буфер</cmenuClipboard>
+			<cmenuSubfields>Считать подполя</cmenuSubfields>
+		</cmenu>
+		<lb_ReportStyle>Стил отчёта:</lb_ReportStyle>
+		<opt_tab>Отчёт в формате с табулятором</opt_tab>
+		<opt_xml>Отчёт в формате XML</opt_xml>
+		<opt_html>Отчёт в формате HTML</opt_html>
+		<cmd_Report>&amp;Создать отчёт</cmd_Report>
+	</Field_Count>
+	<FindReplace>
+		<title>Найти/Заменить:</title>
+		<tbFind>Найти</tbFind>
+		<tbReplace>Заменить</tbReplace>
+		<lb_FindWhat>Найти что:</lb_FindWhat>
+		<cmdFFind>&amp;Найти</cmdFFind>
+		<groupBox1>Параметры поиска:</groupBox1>
+		<ck_f_whole_word>Найти только слово целиком</ck_f_whole_word>
+		<ck_f_match_case>Учитывать регистр</ck_f_match_case>
+		<lb_ReplaceWith>Заменить на:</lb_ReplaceWith>
+		<ck_R_Case>Учитывать регистр</ck_R_Case>
+		<ck_R_RegExp>Использовать регулярные выражения</ck_R_RegExp>
+		<cmd_R_Replace>&amp;Заменить</cmd_R_Replace>
+		<cmd_R_All>Заменит &amp;все</cmd_R_All>
+	</FindReplace>
+	<frmAbout>
+		<title>О MarcEdit.NET</title>
+		<lbVersion>Версия:</lbVersion>
+		<lbAuthor>Автор:</lbAuthor>
+		<lbMod>Последняя модификация:</lbMod>
+		<txt_info>MARCпроцессор поддерживает формат MARC, независмо от варианта (MARC21, UNIMARC, и.т.д.) MARCпроцессор тоже включает поддержку MARCXML схемы, созданой Библиотеки Конгресса США, и имеет XML API для того чтобы поддерживать другие схемы XML. Клиент Z39.50 MarcEdit изпользует Yaz Z39.50. Для информатции информации лиценции, обратитесь к справочному файла MarcEdit под тему программного обеспечения 3rd party.</txt_info>
+		<lbInfo>Больше информации:</lbInfo>
+		<lbThanks>Благодарю Орегонский Госудсарственны Университет за подержку проекта MarcEdit.</lbThanks>
+	</frmAbout>
+	<frmBatchEdit>
+		<title>MarcEdit.NET инструменты редактирования пакетной обработки</title>
+		<navbar>
+			<lnkAddDelete>Добавить/Удалить поле</lnkAddDelete>
+			<lnkSubfield>Редактировать данные подполей</lnkSubfield>
+			<lnkIndicators>Редактировать индикаторы</lnkIndicators>
+			<lnkSwapFields>Переменять поляами</lnkSwapFields>
+		</navbar>
+		<globals>
+			<lb_Field>Поле:</lb_Field>
+			<lb_Subfield>Подполe:</lb_Subfield>
+			<lb_Position>Позиция:</lb_Position>
+			<lb_FieldData>Полевые данные:</lb_FieldData>
+			<lb_ReplaceWith>Заменить на:</lb_ReplaceWith>
+			<lb_Indicator>Индикаторы:</lb_Indicator>
+			<lb_SearchOptions>Параметры поиска</lb_SearchOptions>
+			<lb_MatchCase>Учитывать регистр</lb_MatchCase>
+			<lb_RegEx>Использовать регулярные выражения</lb_RegEx>
+		</globals>
+		<lb_A_Title>Добавить/Удалить поля</lb_A_Title>
+		<ck_A_Insert>Добавить перед</ck_A_Insert>
+		<ck_A_not_present>Добвить поле только если отсутствует</ck_A_not_present>
+		<cmd_A_Delete>&amp;Удалить поле</cmd_A_Delete>
+		<cmd_A_Add>&amp;Добавить поле</cmd_A_Add>
+		<lb_Sub_Title>Редактировать подполя</lb_Sub_Title>
+		<cmd_Sub_Replace>&amp;Заменить текст</cmd_Sub_Replace>
+		<cmd_Sub_Remove>&amp;Удалить текст</cmd_Sub_Remove>
+		<ck_Sub_New>Только новая поле</ck_Sub_New>
+		<ck_Sub_NotPresent>Добавить подполе если отсутсвует</ck_Sub_NotPresent>
+		<lb_Ind_Title>Редактировать индикаторы</lb_Ind_Title>
+		<lb_Ind_Replace>Заменить индиаторы</lb_Ind_Replace>
+		<cmd_I_Replace>&amp;Заменить</cmd_I_Replace>
+		<lb_Swap_Title>Переменять полями</lb_Swap_Title>
+		<ck_Swap_Copy>Скопировать исходный код</ck_Swap_Copy>
+		<ck_Swap_Add>Добавить после присутствующей поля</ck_Swap_Add>
+		<ck_Swap_Override>Не использоват установки по умолчанию</ck_Swap_Override>
+		<cmd_Swap_Process>&amp;Выполнить процесс</cmd_Swap_Process>
+		<label20>Старые данные:</label20>
+	</frmBatchEdit>
+	<frmMain>
+		<title>MarcEdit автор Terry Reese</title>
+		<menu>
+			<mnuFiletools>Инструменты MARC</mnuFiletools>
+			<mnuTools>&amp;Инструменты</mnuTools>
+			<mnuToolsSelect>Выделить записи MARC</mnuToolsSelect>
+			<mnuToolsDelete>&amp;Удалить выденинные записи</mnuToolsDelete>
+			<mnuToolsExtract>&amp;Снять выденинные записи</mnuToolsExtract>
+			<mnuToolsTabbed>Экспортировать записи в формате с &amp;табулятором</mnuToolsTabbed>
+			<mnuToolsGateway>Экспортировать записи в формате &amp;MARC</mnuToolsGateway>
+			<mnuToolsJoin>MARC&amp;связка</mnuToolsJoin>
+			<mnuToolsSplit>&amp;MARCрасщепление</mnuToolsSplit>
+			<mnuToolsPreferences>&amp;Настройки</mnuToolsPreferences>
+			<mnuAddins>&amp;Дополнительные модули</mnuAddins>
+			<mnuAddinTranslator>&amp;Переводить файлы с разделителями</mnuAddinTranslator>
+			<mnuAddinTutorial>Local &amp;Tutorial Manager</mnuAddinTutorial>
+			<mnuAddinScript>&amp;Скрипт сочинитель</mnuAddinScript>
+			<mnuHelpList>Join MarcEdit &amp;Notification List</mnuHelpList>
+		</menu>
+		<navbar>
+			<lnkStart>Домашняя страница</lnkStart>
+			<lnkTools>Инструменты MARC</lnkTools>
+			<lnkAddin>Дополнительные модули</lnkAddin>
+			<lnkHelp>Справка</lnkHelp>
+			<lnkAbout>О MarcEdit.NET</lnkAbout>
+		</navbar>
+		<label2>Полезные инструменты:</label2>
+		<startHelp>MarcEdit.NET справка</startHelp>
+		<lbWhatsNew>Что ногого о MarcEdit.NET</lbWhatsNew>
+		<lnkpTools>MARC инструменты главное окно</lnkpTools>
+		<lbpTools>Access the MARC Tools main window</lbpTools>
+		<lb_pBreaker>MARCнатекст переводит файлы на формате MARC на текст.</lb_pBreaker>
+		<lb_pMaker>ТекстнаMARC переводит текстовые файлы на MARC.</lb_pMaker>
+		<lb_pXMLm>Переводит файлы на формате MARC на MARC21Slim (MARCтонкий)</lb_pXMLm>
+		<lb_pEditor>MarcEdit's built-in notepad designed specifically for editing MARC records.</lb_pEditor>
+		<lnkADelimited>Delimited Text Translator</lnkADelimited>
+		<lnkATutorial>Local Tutorial Manager</lnkATutorial>
+		<lb_ATutorial>Manage local and community created tutorials for MarcEdit</lb_ATutorial>
+		<lb_ADelimited>Импортировать записи с разделителями в MarcEdit.</lb_ADelimited>
+		<lb_AScript>Скриптсочинитель MarcEdit поможеть в сочинение скрипты VB для того, чтобы выполнить сложные задании.</lb_AScript>
+		<lnkHIndex>Содержание и индекс</lnkHIndex>
+		<lnkHError>Предоложение/Отправить отчёт ощибок</lnkHError>
+		<lb_HIndex>Open's MarcEdit's Help System.</lb_HIndex>
+		<lnkHTutorial>View Tutorials</lnkHTutorial>
+		<lb_HTutorial>View all tutorials currently associated with MarcEdit.</lb_HTutorial>
+		<lnkHNotify>Join MarcEdit's Notification List</lnkHNotify>
+		<lb_HNotify>Join the MarcEdit Notification list for updates and information on MarcEdit's development.</lb_HNotify>
+		<lb_HError>Have something to say?  Click here to send it to the author.</lb_HError>
+		<lb_AboutDesc>Here's the real genius behind MarcEdit.  I just put my name on it :-&gt;  If you'd like to find out a little bit more about me or my family, please click here:</lb_AboutDesc>
+	</frmMain>
+	<frmOptions>
+		<title>MarcEdit свойства</title>
+		<tabFile>Файлы</tabFile>
+		<tabExport>Экспорт</tabExport>
+		<tabEditor>MARCредактор</tabEditor>
+		<tabEngine>MARCпроцессор</tabEngine>
+		<tabLang>Язык</tabLang>
+		<lb_SetFileOptions>Настройка параметров файлов:</lb_SetFileOptions>
+		<ckmrc>Associate (*.mrc) files with MarcBreaker</ckmrc>
+		<ckmrk>Associate (*.mrk*) files with MarcEditor</ckmrk>
+		<ckexport>Add export option to Context Menu</ckexport>
+		<ckpreview>Add preview options to Context Menu</ckpreview>
+		<lb_FileAssociate_1>Associate (*</lb_FileAssociate_1>
+		<lb_FileAssociate_2>) file type with the:</lb_FileAssociate_2>
+		<cmd_tEdit>Edit Type</cmd_tEdit>
+		<lb_TCPIP_Props>Свойства TCP/IP:</lb_TCPIP_Props>
+		<lb_TCP_Host>Адрес хост-машины:</lb_TCP_Host>
+		<lb_TCP_Port>Порт:</lb_TCP_Port>
+		<lb_TCP_Timeout>Таймоут:</lb_TCP_Timeout>
+		<ck_export_output>Export Receipt (capture ILS output)</ck_export_output>
+		<lb_Serial_Settings>Настроийи принтеров/Novell:</lb_Serial_Settings>
+		<lb_Serial_Printer_Name>Название принтера:</lb_Serial_Printer_Name>
+		<lb_Editor_Template>Выбирать шаблон MARCредактора:</lb_Editor_Template>
+		<lb_Current_Template>Текуший шаблон:</lb_Current_Template>
+		<cmd_editor_set_font>Выбирать &amp;щрифт</cmd_editor_set_font>
+		<lb_Editor_Font_Props>Set MarcEditor Font Properties:</lb_Editor_Font_Props>
+		<lb_Engine_Diacritics>Diacritics:</lb_Engine_Diacritics>
+		<ck_engine_diacritics>Use diacritics when breaking (MARC-8)</ck_engine_diacritics>
+		<ck_engine_mnemonics>Display mnemonics (even if Unicode)</ck_engine_mnemonics>
+		<lb_Engine_XML_Options>XML Options:</lb_Engine_XML_Options>
+		<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+		<lb_engine_namespace>Use Namespace</lb_engine_namespace>
+		<lb_lang_font>Set Language Font:</lb_lang_font>
+		<lb_Set_Lang>Set Language Pack:</lb_Set_Lang>
+	</frmOptions>
+	<frmSelectMARCRecords>
+		<title>MarcEdit.NET: Modify Selected MARC Records</title>
+		<columnHeader1>Номер записа</columnHeader1>
+		<columnHeader2>Показать поле</columnHeader2>
+		<cmdImport>Импортировать файл</cmdImport>
+		<cmdfDelete>Удалить выделинные записи</cmdfDelete>
+		<cmdExport>Экспортироват выделинные записи</cmdExport>
+		<lb_Search>Найти:</lb_Search>
+		<lb_DisplayField>Показать поле:</lb_DisplayField>
+		<lb_SourceFile>Исходный файл записов на MARC:</lb_SourceFile>
+		<ckSource>Resave modified records in source</ckSource>
+	</frmSelectMARCRecords>
+	<frmTools>
+		<title>Инструменты MARC</title>
+		<menu>
+			<mnuToolsXML>&amp;Edit XML Function List</mnuToolsXML>
+			<mnuToolsUTF8>MARC-&gt;UTF8 перевод</mnuToolsUTF8>
+			<mnuToolsLC>&amp;Normalize LC MARCMakr format</mnuToolsLC>
+			<mnuToolsExport>Э&amp;кспортировать записи на формате MARC</mnuToolsExport>
+			<mnuToolsExtract>Extract &amp;Selected MARC Records</mnuToolsExtract>
+		</menu>
+		<groupBox1>Файлы:</groupBox1>
+		<lb_InputFile>Входный файл:</lb_InputFile>
+		<lb_OutputFile>Выходной файл:</lb_OutputFile>
+		<groupBox2>MARC Functions</groupBox2>
+		<ck_UTF8>Переводить на UTF8</ck_UTF8>
+		<groupBox3>XML переводы</groupBox3>
+		<lb_Results>Резултаты:</lb_Results>
+		<cmdExecute>&amp;Выполнить</cmdExecute>
+		<cmdEdit>&amp;Редактировать</cmdEdit>
+	</frmTools>
+	<frmUtilities>
+		<title>Utilities Dialog</title>
+		<navbar>
+			<lnkExport>Экспортировать записи в формате с табулятором</lnkExport>
+			<lnklnkMARC8toUTF8.Text>MARC8-&gt;UTF8</lnklnkMARC8toUTF8.Text>
+			<lnkSplit>MARCрасщепление</lnkSplit>
+			<lnkJoin>MARCсвязка</lnkJoin>
+		</navbar>
+		<lb_Tab_Header>Экспоритровать записи в формате с табулятором</lb_Tab_Header>
+		<cmdTExport>&amp;Экспортировать</cmdTExport>
+		<cmdTAdd>&amp;Добавить поле</cmdTAdd>
+		<cmdTDelete>&amp;Удалить поле</cmdTDelete>
+		<ckTMarc>MARC</ckTMarc>
+		<lb_Join_Header>MARCсвязка</lb_Join_Header>
+		<lb_Join_Files>Связывать файлы:</lb_Join_Files>
+		<lb_Split_Header>MARCрасщепление </lb_Split_Header>
+		<lb_Split_Folder>Папкa назначения:</lb_Split_Folder>
+		<lb_Split_Records>Число записов:</lb_Split_Records>
+		<lb_UTF8_Header>MARC-8 на UTF-8</lb_UTF8_Header>
+		<lb_UTF8_Dest>Выходный файл:</lb_UTF8_Dest>
+	</frmUtilities>
+	<TCPExport>
+		<title>Экспортировать записи</title>
+		<global>
+			<send>&amp;Переписать</send>
+			<host>Адрес хост-машины:</host>
+			<tranfer>Файл:</tranfer>
+		</global>
+		<tbExport>TCP/IP</tbExport>
+		<tbPrint>Novell/LTP</tbPrint>
+		<lb_TCP_Port>Порт:</lb_TCP_Port>
+		<lb_Serial_Printer_Name>Название принтера:</lb_Serial_Printer_Name>
+	</TCPExport>
+	<xml_console>
+		<title>Edit XML Functions</title>
+		<lb_Defined_Functions>Defined Functions:</lb_Defined_Functions>
+		<cmd_Add>&amp;Добавить</cmd_Add>
+		<cmdDelete>&amp;Удалить</cmdDelete>
+	</xml_console>
+	<xml_functions>
+		<global>
+			<marc>MARC</marc>
+			<marcxml>MARCXML</marcxml>
+			<other>Другое</other>
+		</global>
+		<title>Редактировать XML </title>
+		<lb_GenInfo>General Information:</lb_GenInfo>
+		<lb_Alias>Function Name (Alias):</lb_Alias>
+		<lb_XSLTPath>XSLT Stylesheet Path:</lb_XSLTPath>
+		<lb_FormatInfo>Format Information:</lb_FormatInfo>
+		<lb_Origin>Original Format:</lb_Origin>
+		<lb_Final>Final Format:</lb_Final>
+	</xml_functions>
+	<meEditor>
+		<title>MARCредактор</title>
+		<global>
+			<book>Книга</book>
+			<serial>Serial</serial>
+			<visualmaterial>Visual Material</visualmaterial>
+			<maps>Cartographic Resource</maps>
+			<sound>Sound Recording</sound>
+			<score>Score</score>
+			<electronic>Electronic Resource</electronic>
+			<mixedmedia>Mixed Material</mixedmedia>
+		</global>
+		<menu>
+			<mnuFileNew>&amp;Новое</mnuFileNew>
+			<mnuFileNewDefault>по умолчанию</mnuFileNewDefault>
+			<mnuFileRecent>Re¢ Files</mnuFileRecent>
+			<mnuFileNone>ничего</mnuFileNone>
+			<mnuFileSaveAs>Сохранить как</mnuFileSaveAs>
+			<mnuFilePrint>&amp;Печать</mnuFilePrint>
+			<mnuFileCompile>Comp&amp;ile file into MARC</mnuFileCompile>
+			<mnuEdit>&amp;Правка</mnuEdit>
+			<mnuEditUndo>&amp;Отменить</mnuEditUndo>
+			<mnuEditRedo>&amp;Повторить</mnuEditRedo>
+			<mnuEditSpecialUndo>Special U&amp;ndo</mnuEditSpecialUndo>
+			<mnuEditCut>&amp;Вырезать</mnuEditCut>
+			<mnuEditCopy>&amp;Копировать</mnuEditCopy>
+			<mnuEditPaste>&amp;Вставить</mnuEditPaste>
+			<mnuEditClear>Cl&amp;ear</mnuEditClear>
+			<mnuEditFind>&amp;Найти</mnuEditFind>
+			<mnuEditReplace>&amp;Заменить</mnuEditReplace>
+			<mnuEdit008>Добавить 00&amp;8</mnuEdit008>
+			<mnuEditALA>Симболы &amp;ALA</mnuEditALA>
+			<mnuEditSpelling>&amp;Проверить правописание</mnuEditSpelling>
+			<mnuEditSelectAll>&amp;Выделить всё</mnuEditSelectAll>
+			<mnuEditWrap>&amp;Перенос слои</mnuEditWrap>
+			<mnuEditInfo>&amp;MARC информатции</mnuEditInfo>
+			<mnuEditInfoOCLC>OCLC MARC справки</mnuEditInfoOCLC>
+			<mnuEditInfoLC>U.S. Library of Congress MARC Help</mnuEditInfoLC>
+			<mnuFont>&amp;Шрифты</mnuFont>
+			<mnuFontFont>&amp;Шрифт...</mnuFontFont>
+			<mnuFontColor>&amp;Цвет...</mnuFontColor>
+			<mnuToolsLC>&amp;Нормализировать запис LC</mnuToolsLC>
+			<mnuToolsAdd>&amp;Добавить/Снять поля</mnuToolsAdd>
+			<mnuToolsIndicator>&amp;Править индикаторы данных</mnuToolsIndicator>
+			<mnuToolsSubfield>Редактироварь &amp;подполя</mnuToolsSubfield>
+			<mnuToolsSort>&amp;Сортировать поля</mnuToolsSort>
+			<mnuToolsSwap>Swa&amp;p Field Data</mnuToolsSwap>
+			<mnuToolsOptions>Op&amp;tions</mnuToolsOptions>
+			<mnuView>&amp;Вид</mnuView>
+			<mnuViewToolbar>&amp;Тулбарь</mnuViewToolbar>
+			<mnuViewStatus>&amp;Статус</mnuViewStatus>
+			<mnuReports>&amp;Отчёты</mnuReports>
+			<mnuReportsField>&amp;Число полей</mnuReportsField>
+			<mnuReportsRobert>&amp;Сравнить записи MARC</mnuReportsRobert>
+			<mnuReportsValidate>&amp;MARCпроверка</mnuReportsValidate>
+		</menu>
+		<tooltip>
+			<tbPrint>Печать файл</tbPrint>
+			<tbCompile>Compile Current File</tbCompile>
+			<tbCut>Вырезать</tbCut>
+			<tbCopy>Копировать</tbCopy>
+			<tbALA>Симболы ALA</tbALA>
+			<tbDelete>Удлаить</tbDelete>
+			<tbFind>Найти</tbFind>
+			<tbZ39_50>Клиент Z39.50 MarcEdit</tbZ39_50>
+		</tooltip>
+	</meEditor>
+	<messages>
+		<general>
+			<header>MarcEdit.NET</header>
+			<text_not_found>Искомый текст не найден.</text_not_found>
+			<source_undefined>Обязательно определить входный файл.</source_undefined>
+			<output_undefined>Обязательно определить выходный файл.</output_undefined>
+			<alias_undefined>Alias cannot be left undefined.</alias_undefined>
+			<xslt_undefined>XSLT Path cannot be left undefined.</xslt_undefined>
+			<field_undefined>Field cannot be left undefined.</field_undefined>
+			<fielddata_undefined>Field data cannot be left undefined.</fielddata_undefined>
+			<subfield_undefined>Subfield cannot be left undefined.</subfield_undefined>
+			<item_undefined>Operation cannot be completed.  No item was selected.</item_undefined>
+			<fields_added>Довавил {record_number} полей.</fields_added>
+			<fields_deleted>Удалил {record_number} полей.</fields_deleted>
+			<fields_selected>Выделил {record_number} записи.</fields_selected>
+			<records_deleted>Удалил выделинние записи.</records_deleted>
+			<records_extracted>Selected records have been extracted.</records_extracted>
+			<export_items_success>Экспортировал записи в {file_path}</export_items_success>
+			<changes_made>Изменил {record_number} записов.</changes_made>
+			<no_changes>No modifications were made.</no_changes>
+			<challenge_continue>Вы уверены что хотите продолжить? </challenge_continue>
+			<challenge_file_has_changed>Файл изменился.  Хотите сохранить изменения?</challenge_file_has_changed>
+			<undefined_error>Undefined error.  If you continue to recieve this error, please contact the author including the steps necessary to recreate the problem.</undefined_error>
+			<undefined_processing_error>Undefined processing error.  Operation could not be completed.</undefined_processing_error>
+			<valid_marc_error>Undefined error.  Please make certain that this file is valid MARC.</valid_marc_error>
+			<selected_error>The requested action cannot be completed.  No item has been selected.</selected_error>
+			<temp_file_error>Operation could not be completed.  Application could not generate the necessary temporary files.</temp_file_error>
+			<internal_error>Внутренняя ощибка: {error_number}.  Нельзя выполнить процесс.</internal_error>
+			<file_not_found_error>{file_path} не найден.</file_not_found_error>
+			<general_exception_error>Exception Message: {exception_message}{newline}Exception Source: {exception_source}</general_exception_error>
+			<general_error>Error Number: {error_number}{newline}Error Message: {error_message}{newline}Line Number: {line_number}</general_error>
+		</general>
+		<Field_Cound>
+			<status_window>Generating Report...Please wait</status_window>
+		</Field_Cound>
+		<frmSelectMARCRecords>
+			<status_bar>Перевожу запис {record_number}</status_bar>
+		</frmSelectMARCRecords>
+		<frmTools>
+			<txt_Results_Error>Ошибка: {error_number}</txt_Results_Error>
+			<txt_Results_Success>Переводил {recs_processed} записи на {nnn} секундов.</txt_Results_Success>
+			<txt_Results_Transform>Переводил все записи на {nnn} секундов.</txt_Results_Transform>
+		</frmTools>
+		<frmUtilities>
+			<uft8_status_success>Перводил {file_path} в UTF-8 и сохранил в {dest_path}.</uft8_status_success>
+			<lbCaption_Prepare>Подготовлю файли за перевод симболов...</lbCaption_Prepare>
+			<lbCaption_ReBuild>Перестройю данные MARC...</lbCaption_ReBuild>
+			<lbCaption_Success>Выполнил процесс на {record_number} записов на {newline}{nnn} секундов.</lbCaption_Success>
+			<lbJoinStatus>Соединил фаилы в {file_path}</lbJoinStatus>
+			<txtSplitProgress_Success>Создал {record_number} файлов.</txtSplitProgress_Success>
+		</frmUtilities>
+		<meEditor>
+			<status_window>Файл загрузить....Ожидайте пожалуйста.</status_window>
+			<status_bar_open>{file_path} загрузил в {nnn} секундов.</status_bar_open>
+			<status_bar_save>{file_path} сохранил за {nnn} секундов.</status_bar_save>
+			<xml_load_undefined>Unable to load.  This XML file type is undefined.</xml_load_undefined>
+		</meEditor>
+	</messages>
+	
+		<me_tabbed>
+			<label>
+				<header>Export Tabbed Delimited Records</header>
+				<output>Output File:</output>
+				<input>Input File:</input>
+				<arguments>Arguments</arguments>
+				<cdata>Constant Data</cdata>
+				<punctuation>Term. Punctuation:</punctuation>
+				<indicator>Indicators:</indicator>
+				<map_to>Map To:</map_to>
+				<select>Select:</select>
+				<version>Version:</version>
+				<qualifier>Text Qualifier</qualifier>
+				<enter_character>Enter Character</enter_character>
+				<delimiter>Delimiter</delimiter>
+				<summary>The MarcEdit Delimited Text Translator provides a quick and easy method for converting delimited text files into MARC.  The utility allows users to define MARC Fields and indicators to individual fields and automatically creates a minimal 008 for your MARC records.  Please be aware however, this utility just provides a method to convert delimited data to MARC.  This utility will not do validation on the fields created.</summary>
+				<finished_summary>"MarcEdit's Delimited Text Translator has successfully created a MARC Text file at: {file_path}.  This file can be viewed/edited in the MarcEditor if further manipulation is required.  To translate this file into raw MARC, you must &quot;remake&quot; this file using the MarcMaker.";</finished_summary>
+			</label>
+			<button>
+				<cancel>Cancel</cancel>
+				<next>Next</next>
+				<finish>Finish</finish>
+				<save_template>Save Template</save_template>
+				<load_template>Load Template</load_template>
+				<apply>Apply</apply>
+			</button>
+			<messages>
+				<no_save>Template file could not be written...Quitting.</no_save>
+				<not_compatible>The file format seems to be incompatible with this utility.  Do you wish to continue anyway?</not_compatible>
+				<map_to_undefined>Map to field cannot be left undefined.</map_to_undefined>
+				<subfield_undefined>MARC fields greater than 10 must define a subfield code.</subfield_undefined>
+				<needs_numeric>Field data must be numeric.  Example: 049$a</needs_numeric>
+			</messages>
+	</me_tabbed>
+	
+</language>
